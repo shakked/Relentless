@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B728287205ADE02CD4ABF41"
+               BlueprintIdentifier = "336B1718813535A47FD9EEB9"
                BuildableName = "libPods-Relentless-GPUImage.a"
                BlueprintName = "Pods-Relentless-GPUImage"
                ReferencedContainer = "container:Pods.xcodeproj">

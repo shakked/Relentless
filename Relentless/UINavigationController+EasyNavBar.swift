@@ -9,7 +9,7 @@
 import UIKit
 
 extension UINavigationController {
-    func configureNavBar(barTintColor: UIColor, textColor: UIColor, font: UIFont = UIFont(name: "Avenir-Light", size: 18.0)!, barStyle: UIBarStyle = .Black) {
+    func configureNavBar(barTintColor: UIColor, textColor: UIColor, font: UIFont = UIFont(name: "Avenir", size: 18.0)!, barStyle: UIBarStyle = .Black) {
         navigationBar.barTintColor = barTintColor
         navigationBar.barStyle = barStyle
         navigationBar.tintColor = textColor

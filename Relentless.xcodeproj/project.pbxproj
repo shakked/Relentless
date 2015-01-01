@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2B50F6B559647951ED0CCE3A /* libPods-RelentlessTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B53AA64FC7A68790E4FA938 /* libPods-RelentlessTests.a */; };
+		552BBDC91B548FD600A9FE64 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BBDC81B548FD600A9FE64 /* iTunesArtwork@2x.png */; };
+		552BBE0D1B55D89400A9FE64 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552BBE0C1B55D89400A9FE64 /* ProfileTableViewController.swift */; };
+		552BBE101B55E08F00A9FE64 /* 11062802_10152843498556604_2040543917207342683_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 552BBE0F1B55E08F00A9FE64 /* 11062802_10152843498556604_2040543917207342683_n.jpg */; };
+		552BBE121B55E4B600A9FE64 /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552BBE111B55E4B600A9FE64 /* ParallaxHeaderView.swift */; };
+		552BBE141B55E4CE00A9FE64 /* ParallaxHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552BBE131B55E4CE00A9FE64 /* ParallaxHeaderView.xib */; };
+		552BBE161B55E54200A9FE64 /* nyc-monthly-parking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 552BBE151B55E54200A9FE64 /* nyc-monthly-parking.jpg */; };
+		552BBE4F1B57272E00A9FE64 /* ProfileCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552BBE4D1B57272E00A9FE64 /* ProfileCardCell.swift */; };
+		552BBE501B57272E00A9FE64 /* ProfileCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552BBE4E1B57272E00A9FE64 /* ProfileCardCell.xib */; };
+		552BBE581B5730E800A9FE64 /* line_chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BBE571B5730E800A9FE64 /* line_chart.png */; };
+		552BBE5A1B5730F200A9FE64 /* area_chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BBE591B5730F200A9FE64 /* area_chart.png */; };
+		552BBE5C1B57310100A9FE64 /* positive_dynamic.png in Resources */ = {isa = PBXBuildFile; fileRef = 552BBE5B1B57310100A9FE64 /* positive_dynamic.png */; };
+		552BBE5E1B57314B00A9FE64 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552BBE5D1B57314B00A9FE64 /* ProfileModel.swift */; };
 		554B1D4E1B30DBDF00987933 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D4C1B30DBDF00987933 /* ActivityCell.swift */; };
 		554B1D4F1B30DBDF00987933 /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554B1D4D1B30DBDF00987933 /* ActivityCell.xib */; };
 		554B1D511B30DDA000987933 /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D501B30DDA000987933 /* ActivityManager.swift */; };
@@ -63,6 +75,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		552BBDC81B548FD600A9FE64 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		552BBE0C1B55D89400A9FE64 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		552BBE0F1B55E08F00A9FE64 /* 11062802_10152843498556604_2040543917207342683_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 11062802_10152843498556604_2040543917207342683_n.jpg; path = ../../11062802_10152843498556604_2040543917207342683_n.jpg; sourceTree = "<group>"; };
+		552BBE111B55E4B600A9FE64 /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderView.swift; sourceTree = "<group>"; };
+		552BBE131B55E4CE00A9FE64 /* ParallaxHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParallaxHeaderView.xib; sourceTree = "<group>"; };
+		552BBE151B55E54200A9FE64 /* nyc-monthly-parking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "nyc-monthly-parking.jpg"; path = "../../nyc-monthly-parking.jpg"; sourceTree = "<group>"; };
+		552BBE4D1B57272E00A9FE64 /* ProfileCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCardCell.swift; sourceTree = "<group>"; };
+		552BBE4E1B57272E00A9FE64 /* ProfileCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCardCell.xib; sourceTree = "<group>"; };
+		552BBE571B5730E800A9FE64 /* line_chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_chart.png; sourceTree = "<group>"; };
+		552BBE591B5730F200A9FE64 /* area_chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = area_chart.png; sourceTree = "<group>"; };
+		552BBE5B1B57310100A9FE64 /* positive_dynamic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = positive_dynamic.png; sourceTree = "<group>"; };
+		552BBE5D1B57314B00A9FE64 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		554B1D4C1B30DBDF00987933 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		554B1D4D1B30DBDF00987933 /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
 		554B1D501B30DDA000987933 /* ActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
@@ -74,8 +98,8 @@
 		555237B91B3706BA00721335 /* UINavigationController+EasyNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+EasyNavBar.swift"; sourceTree = "<group>"; };
 		555237BE1B38024400721335 /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
 		555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSSJournalParentViewController.swift; sourceTree = "<group>"; };
-		555237C81B386BBC00721335 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = Relentless/HeaderView.swift; sourceTree = "<group>"; };
-		555237C91B386BBC00721335 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = Relentless/HeaderView.xib; sourceTree = "<group>"; };
+		555237C81B386BBC00721335 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		555237C91B386BBC00721335 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		5552F75C1B5041BB0080F37F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5552F75E1B5043AD0080F37F /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		5552F7611B50466B0080F37F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -138,12 +162,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552BBE0E1B55D89E00A9FE64 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				552BBE0C1B55D89400A9FE64 /* ProfileTableViewController.swift */,
+				555237C81B386BBC00721335 /* HeaderView.swift */,
+				555237C91B386BBC00721335 /* HeaderView.xib */,
+				552BBE4D1B57272E00A9FE64 /* ProfileCardCell.swift */,
+				552BBE4E1B57272E00A9FE64 /* ProfileCardCell.xib */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		554B1D521B30DDA600987933 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				556F22281B540F610093AE9B /* Parse Wrappers */,
 				554B1D501B30DDA000987933 /* ActivityManager.swift */,
 				554B1D591B30E15600987933 /* Playground.playground */,
+				552BBE5D1B57314B00A9FE64 /* ProfileModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -204,11 +241,17 @@
 		55F722B71B2E631D00D17988 = {
 			isa = PBXGroup;
 			children = (
+				552BBE591B5730F200A9FE64 /* area_chart.png */,
+				552BBE5B1B57310100A9FE64 /* positive_dynamic.png */,
+				552BBE571B5730E800A9FE64 /* line_chart.png */,
+				552BBE151B55E54200A9FE64 /* nyc-monthly-parking.jpg */,
+				552BBE0F1B55E08F00A9FE64 /* 11062802_10152843498556604_2040543917207342683_n.jpg */,
 				556F220D1B52F2EC0093AE9B /* Bench Press With Dumbbells-100.png */,
 				556F22241B540C290093AE9B /* Weightlift-100.png */,
+				552BBDC81B548FD600A9FE64 /* iTunesArtwork@2x.png */,
 				5552F75C1B5041BB0080F37F /* Podfile */,
-				555237C81B386BBC00721335 /* HeaderView.swift */,
-				555237C91B386BBC00721335 /* HeaderView.xib */,
+				552BBE111B55E4B600A9FE64 /* ParallaxHeaderView.swift */,
+				552BBE131B55E4CE00A9FE64 /* ParallaxHeaderView.xib */,
 				55F722C21B2E631D00D17988 /* Relentless */,
 				55F722D81B2E631D00D17988 /* RelentlessTests */,
 				55F722C11B2E631D00D17988 /* Products */,
@@ -230,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				55F722C51B2E631D00D17988 /* AppDelegate.swift */,
+				552BBE0E1B55D89E00A9FE64 /* Profile */,
 				5552F7601B5046490080F37F /* Networking */,
 				555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */,
 				5552F7611B50466B0080F37F /* SignUpViewController.swift */,
@@ -394,16 +438,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				5552F75D1B5041BB0080F37F /* Podfile in Resources */,
+				552BBE161B55E54200A9FE64 /* nyc-monthly-parking.jpg in Resources */,
 				55F722D01B2E631D00D17988 /* LaunchScreen.xib in Resources */,
 				556F22251B540C290093AE9B /* Weightlift-100.png in Resources */,
 				5552F7641B50466B0080F37F /* SignUpViewController.xib in Resources */,
+				552BBE501B57272E00A9FE64 /* ProfileCardCell.xib in Resources */,
 				55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */,
 				556F220A1B52EB720093AE9B /* StreakView.xib in Resources */,
 				555237CB1B386BBC00721335 /* HeaderView.xib in Resources */,
+				552BBE5A1B5730F200A9FE64 /* area_chart.png in Resources */,
 				556F220E1B52F2EC0093AE9B /* Bench Press With Dumbbells-100.png in Resources */,
+				552BBE141B55E4CE00A9FE64 /* ParallaxHeaderView.xib in Resources */,
 				554B1D4F1B30DBDF00987933 /* ActivityCell.xib in Resources */,
+				552BBE581B5730E800A9FE64 /* line_chart.png in Resources */,
 				556F221A1B531D6E0093AE9B /* DoneCancelView.xib in Resources */,
+				552BBDC91B548FD600A9FE64 /* iTunesArtwork@2x.png in Resources */,
+				552BBE101B55E08F00A9FE64 /* 11062802_10152843498556604_2040543917207342683_n.jpg in Resources */,
 				556F22161B5305800093AE9B /* ActivityTypeCell.xib in Resources */,
+				552BBE5C1B57310100A9FE64 /* positive_dynamic.png in Resources */,
 				55F722E81B2E635400D17988 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,8 +539,10 @@
 			files = (
 				55F722C81B2E631D00D17988 /* ViewController.swift in Sources */,
 				55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */,
+				552BBE121B55E4B600A9FE64 /* ParallaxHeaderView.swift in Sources */,
 				554B1D511B30DDA000987933 /* ActivityManager.swift in Sources */,
 				555237BF1B38024400721335 /* NSDate+Extensions.swift in Sources */,
+				552BBE4F1B57272E00A9FE64 /* ProfileCardCell.swift in Sources */,
 				5552F75F1B5043AD0080F37F /* LoginManager.swift in Sources */,
 				55F722E71B2E635400D17988 /* HomeViewController.swift in Sources */,
 				556F22231B53FB670093AE9B /* UIImage+Screenshot.swift in Sources */,
@@ -498,11 +552,13 @@
 				5571A4431B3B40980057F845 /* Activity.swift in Sources */,
 				556F22051B52C2800093AE9B /* PFObject+Extension.swift in Sources */,
 				554B1D5B1B30E55700987933 /* UIColor+Hex.swift in Sources */,
+				552BBE5E1B57314B00A9FE64 /* ProfileModel.swift in Sources */,
 				5599684F1B51EBA2002C6A2B /* Constants.swift in Sources */,
 				556F22111B5304B30093AE9B /* ActivityTypeTableViewController.swift in Sources */,
 				555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */,
 				556F22071B52EB4A0093AE9B /* FeedTableViewController.swift in Sources */,
 				554B1D4E1B30DBDF00987933 /* ActivityCell.swift in Sources */,
+				552BBE0D1B55D89400A9FE64 /* ProfileTableViewController.swift in Sources */,
 				556F22031B52C2100093AE9B /* Array+Extension.swift in Sources */,
 				556F22151B5305800093AE9B /* ActivityTypeCell.swift in Sources */,
 				5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */,

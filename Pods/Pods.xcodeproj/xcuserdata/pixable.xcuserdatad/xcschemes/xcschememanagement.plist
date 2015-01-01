@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Relentless-AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Relentless-AMSmoothAlert.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,12 +24,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Relentless-FXBlurView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Relentless-Facebook-iOS-SDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Relentless-GPUImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Relentless-ParallaxBlur.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,67 +77,72 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00DAB3CCB2788D9A5DB4B8D6</key>
+		<key>00A7323CDF158DE4E97BCE1B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0F973FC499A566FC2AFC60BE</key>
+		<key>1F1CF7091D6DA02BF16BCF1E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E64CDBE83F9541B1E099062</key>
+		<key>2DA8D1817DB3FB53461385B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7351EE8AA26C1525A00B4284</key>
+		<key>336B1718813535A47FD9EEB9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8D00E22587EED1993584965D</key>
+		<key>3816BBED0D532EFFA5400049</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>988F6CDCDEBFDD6DCED27C76</key>
+		<key>39DCD797DC3A63D482095CA0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9B728287205ADE02CD4ABF41</key>
+		<key>3DA5BE7A35485BF0A6647A7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B190699E30435819719BE9FA</key>
+		<key>4E1884CECD4DF1526D9A4A7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C8FBD2EF7F46882C18E9D8F5</key>
+		<key>7613DD8A89B69358900AAB58</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBB66C495A063A03028D0E5E</key>
+		<key>8D828A75FB04EF05B9A3C6A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD24EFBCEACCE703DB9EBCBD</key>
+		<key>B03526F818D372F6AAC4B3EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D4842BF68DEFD73AF3DBB9BF</key>
+		<key>B912F699B92FD15A92DA0745</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE78C02503EDBB935AADA626</key>
+		<key>C4630BB5972E776AE4CFF543</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8AAAC5463305E5B99085E3C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

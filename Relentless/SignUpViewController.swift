@@ -45,7 +45,9 @@ class SignUpViewController: UIViewController {
         LoginManager.sharedManager.loginAndLinkFBAccessTokenWithParse({ (succeeded) -> (Void) in
             if succeeded {
                 LoginManager.sharedManager.configureUser({ (succeeded) -> (Void) in
-                    self.presentViewController(UINavigationController(rootViewController: FeedTableViewController(style: UITableViewStyle.Grouped)), animated: true, completion: nil)
+                    let ftvc = FeedTableViewController(style: .Grouped)
+                    ftvc.date = NSDate()
+                    self.presentViewController(UINavigationController(rootViewController: ftvc), animated: true, completion: nil)
                 })
             } else {
                 let alert = AMSmoothAlertView(dropAlertWithTitle: "Something went wrong!", andText: "We couldn't log you in.", andCancelButton: false, forAlertType: AlertType.Failure)

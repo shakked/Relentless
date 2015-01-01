@@ -18,11 +18,14 @@ struct Constants {
     struct Views {
         static let StreakView = "StreakView"
         static let DoneCancelView = "DoneCancelView"
+        static let HeaderView = "HeaderView"
+        static let ParallaxHeaderView = "ParallaxHeaderView"
     }
     
     struct Cells {
         static let ActivityCell = "ActivityCell"
         static let ActivityTypeCell = "ActivityTypeCell"
+        static let ProfileCardCell = "ProfileCardCell"
     }
     
     struct Parameters {
@@ -35,7 +38,9 @@ struct Constants {
         static let type = "type"
         static let icon = "icon"
         static let activityEvent = "activityEvent"
+        static let activityType = "activityType"
         static let explanation = "explanation"
+        static let longestStreak = "longestStreak"
     }
     
     struct ActivityType {

@@ -1,7 +1,12 @@
-//: Playground - noun: a place where people can play
-
 import UIKit
 
-var mySet : Set = ["Zach", "Omry", "Moty", "Betty"]
-mySet.insert("Zach")
-mySet.remove("aslkjdflkasjdf")
+let number3 : Int = 3
+let string3 : String = "3"
+if number3 == string3 {
+    println("they are equal")
+} else {
+    println("they are NOT equal")
+}
+
+
+

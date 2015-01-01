@@ -19,6 +19,7 @@ class LoginManager: NSObject {
     
     func logInWithFacebook(completion: (Bool) -> (Void)) {
         if FBSDKAccessToken.currentAccessToken() == nil {
+            //only friends that have the application -> facebook invites
             FBSDKLoginManager().logInWithReadPermissions(["public_profile", "email", "user_friends"], handler: { (result, error) -> Void in
                 if error == nil && !result.isCancelled {
                     completion(true)

@@ -16,38 +16,21 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZR-Ss-jvO">
                             <rect key="frame" x="8" y="9" width="50" height="50"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmF-Ae-cGz">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2p-Hc-elY">
                                     <rect key="frame" x="5" y="5" width="40" height="40"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2p-Hc-elY">
-                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="40" id="aEp-lK-XWl"/>
-                                                <constraint firstAttribute="height" constant="40" id="m9l-U0-aSM"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="Jbm-qK-kQK"/>
-                                        <constraint firstAttribute="width" constant="40" id="LiV-O8-ify"/>
-                                        <constraint firstAttribute="centerX" secondItem="Z2p-Hc-elY" secondAttribute="centerX" id="Zo9-s7-uXH"/>
-                                        <constraint firstAttribute="centerY" secondItem="Z2p-Hc-elY" secondAttribute="centerY" id="pvn-dO-RdA"/>
+                                        <constraint firstAttribute="width" constant="40" id="aEp-lK-XWl"/>
+                                        <constraint firstAttribute="height" constant="40" id="m9l-U0-aSM"/>
                                     </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="20"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </view>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.59999999999999998" alpha="0.25" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.0" green="0.79012566900000003" blue="0.58163275120000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="centerX" secondItem="dmF-Ae-cGz" secondAttribute="centerX" id="S9t-e9-iQz"/>
-                                <constraint firstAttribute="centerY" secondItem="dmF-Ae-cGz" secondAttribute="centerY" id="TMS-0b-1Nc"/>
+                                <constraint firstAttribute="centerX" secondItem="Z2p-Hc-elY" secondAttribute="centerX" id="EMP-QH-jXj"/>
+                                <constraint firstAttribute="centerY" secondItem="Z2p-Hc-elY" secondAttribute="centerY" id="Qrh-xh-Ir5"/>
                                 <constraint firstAttribute="width" constant="50" id="lVq-NT-kFO"/>
                                 <constraint firstAttribute="height" constant="50" id="pxp-kQ-aHg"/>
                             </constraints>
@@ -57,8 +40,8 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep it up. You're doing great !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li0-gy-XvF">
-                            <rect key="frame" x="66" y="19" width="252.5" height="30"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're on a 4 day workout streak." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li0-gy-XvF">
+                            <rect key="frame" x="66" y="19" width="267" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="r0m-0E-41P"/>
                             </constraints>

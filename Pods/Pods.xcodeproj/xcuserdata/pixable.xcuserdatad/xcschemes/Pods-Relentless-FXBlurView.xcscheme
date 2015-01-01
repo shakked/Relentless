@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "988F6CDCDEBFDD6DCED27C76"
-               BuildableName = "libPods-Relentless-AFNetworking.a"
-               BlueprintName = "Pods-Relentless-AFNetworking"
+               BlueprintIdentifier = "E8AAAC5463305E5B99085E3C"
+               BuildableName = "libPods-Relentless-FXBlurView.a"
+               BlueprintName = "Pods-Relentless-FXBlurView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

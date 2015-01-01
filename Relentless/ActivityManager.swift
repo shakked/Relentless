@@ -71,15 +71,59 @@ class ActivityManager: NSObject {
         }
     }
     
-    
-    func calculateStreak(completion: ((Int, Bool) -> Void)) {
+    func activitesInformation(completion: (Int, ActivityType?) -> (Void)) {
         let query = PFQuery(className: Constants.Classes.ActivityEvent)
         query.whereKey(Constants.Parameters.user, equalTo: PFUser.currentUser()!)
+        query.includeKey(Constants.Parameters.activities)
+        query.includeKey("\(Constants.Parameters.activities).type")
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if error == nil {
+                let objects = objects as? [PFObject] ?? []
+                let activityEvents = ActivityEvent.parse(objects)
+                var activities : [Activity] = []
+                for activityEvent in activityEvents {
+                    activities += activityEvent.activities
+                }
+                
+                
+                var activityTypeCounts = Dictionary<ActivityType,Int>()
+                for activity in activities {
+                    if activityTypeCounts[activity.type] == nil {
+                        activityTypeCounts[activity.type] = 1
+                    } else {
+                        var currentCount = activityTypeCounts[activity.type]!
+                        activityTypeCounts[activity.type] = ++currentCount
+                    }
+                }
+                
+                var mostFrequentActivityType : ActivityType!
+                var currentFrequency = 0
+                for (activityType, frequency) in activityTypeCounts {
+                    if frequency > currentFrequency {
+                        currentFrequency = frequency
+                        mostFrequentActivityType = activityType
+                    }
+                }
+            
+                completion(activities.count, mostFrequentActivityType)
+            } else {
+                completion(0, nil)
+            }
+        }
+        
+        
+    }
+    
+    func calculateAndSaveStreak(completion: ((Int, Bool) -> Void)) {
+        let query = PFQuery(className: Constants.Classes.ActivityEvent)
+        query.whereKey(Constants.Parameters.user, equalTo: PFUser.currentUser()!)
+        query.whereKey(Constants.Parameters.date, lessThanOrEqualTo: NSDate.tomorrowMidnight())
         query.includeKey(Constants.Parameters.activities)
         query.includeKey("\(Constants.Parameters.activities).type")
         query.orderByDescending(Constants.Parameters.date)
         query.findObjectsInBackgroundWithBlock { (activityEventObjects, error: NSError?) -> Void in
             if error == nil {
+                
                 let activityEventObjects = activityEventObjects as! [PFObject]
                 let activityEvents = ActivityEvent.parse(activityEventObjects)
                 var date = NSDate()
@@ -88,10 +132,28 @@ class ActivityManager: NSObject {
                 for activityEvent in activityEvents {
                     if activityEvent.activities.count > 0 && calendar.isDate(date, inSameDayAsDate: activityEvent.date) {
                         streak++
+                    } else {
+                        break
                     }
                     date = date.dateByAddingTimeInterval(-24*60*60)
                 }
-                completion(streak, true)
+                
+                PFUser.currentUser()!.fetchInBackgroundWithBlock({ (user: PFObject?, _) -> Void in
+                    if let user = user {
+                        let longestStreak = (user[Constants.Parameters.longestStreak] as? Int) ?? 0
+                        if streak > longestStreak {
+                            user[Constants.Parameters.longestStreak] = streak
+                            user.saveInBackgroundWithBlock({ (succeeded, _) -> Void in
+                                completion(streak, succeeded)
+                            })
+                        } else {
+                            completion(streak, true)
+                        }
+                    } else {
+                        println("here")
+                        completion(streak, false)
+                    }
+                })
             } else {
                 completion(0, false)
             }

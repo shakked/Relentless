@@ -11,45 +11,55 @@ import UIKit
 class FeedTableViewController: UITableViewController {
     var activityEvent : ActivityEvent = ActivityEvent.empty() {
         didSet {
-            title = activityEvent.date.string()
+            navigationItem.title = activityEvent.date.string()
             tableView.reloadData()
         }
     }
-    
+    var date : NSDate? {
+        didSet {
+            loadData()
+        }
+    }
     var streakView : StreakView?
     var streak : Int = 0 {
         didSet {
             streakView?.streakLabel.text = "\(streak)"
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
-        configureTableView()
     }
     
     //MARK:- Loading Data
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        tableView.reloadData()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        configureTableView()
     }
     
     func loadData() {
-        ActivityManager.sharedManager.activityEvent(NSDate(), completion: { (activityEvent) -> (Void) in
+        ActivityManager.sharedManager.activityEvent(date ?? NSDate(), completion: { (activityEvent) -> (Void) in
             self.activityEvent = activityEvent
             self.refreshControl?.endRefreshing()
+            self.tableView.reloadData()
         })
-        ActivityManager.sharedManager.calculateStreak({ (streak, succeeded) -> Void in
+        ActivityManager.sharedManager.calculateAndSaveStreak({ (streak, succeeded) -> Void in
             self.streak = streak
+            self.tableView.reloadData()
         })
+        
+        //
     }
     
     //MARK:- TableView DataSource and Configuration/NavBar
     
     func configureTableView() {
-        navigationController?.configureNavBar(GlobalStyles.greenColor(), textColor: UIColor.whiteColor())
-        navigationItem.rightBarButtonItem = UIBarButtonItem.addBarButton(self, tintColor: UIColor.whiteColor(), selector: "addActivities")
         tableView.registerNib(UINib(nibName: Constants.Cells.ActivityCell, bundle: nil), forCellReuseIdentifier: "cell")
         tableView.separatorStyle = .None
         tableView.backgroundColor = GlobalStyles.lightGrayColor()
@@ -84,10 +94,37 @@ class FeedTableViewController: UITableViewController {
             }
         })
         
+        cell.moreButtonBlock = {
+            let alertController = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .ActionSheet)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+            alertController.addAction(cancelAction)
+            
+            let deleteAction = UIAlertAction(title: "Delete", style: .Destructive) { (action) in
+                activity.object.deleteInBackgroundWithBlock({ (succeeded, error: NSError?) -> Void in
+                    if succeeded {
+                        self.activityEvent.activities.removeObject(activity)
+                        self.activityEvent.object?.removeObject(activity.object, forKey: Constants.Parameters.activities)
+                        self.activityEvent.object?.saveEventually(nil)
+                        self.tableView.beginUpdates()
+                        self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
+                        self.tableView.endUpdates()
+                    } else {
+                        let alert = AMSmoothAlertView(dropAlertWithTitle: "Something went wrong!", andText: "We couldn't delete the activity.", andCancelButton: false, forAlertType: AlertType.Failure)
+                        alert.show()
+                    }
+                })
+            }
+            alertController.addAction(deleteAction)
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        
+        
         return cell
     }
 
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let calendar = NSCalendar.currentCalendar()
         streakView = NSBundle.mainBundle().loadNibNamed(Constants.Views.StreakView, owner: self, options: nil)[0] as? StreakView
         streakView?.streakLabel.text = "\(streak)"
         return streakView
@@ -99,20 +136,4 @@ class FeedTableViewController: UITableViewController {
     
     //MARK:- Navigation
     
-    func addActivities() {
-//        let screenshot = UIImage.screenshot(navigationController!.view)
-//        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-//        let effectView = UIVisualEffectView(effect: blurEffect)
-//        effectView.backgroundColor = UIColor.redColor()
-//        effectView.frame = UIApplication.sharedApplication().keyWindow!.bounds
-        let attvc = ActivityTypeTableViewController(activityEvent: activityEvent)
-        let view = UIView(frame: UIApplication.sharedApplication().keyWindow!.bounds)
-        var gradient: CAGradientLayer = CAGradientLayer()
-        gradient.frame = view.bounds
-        gradient.colors = [GlobalStyles.greenColor().CGColor, UIColor(rgba: "#99FFDB").CGColor]
-        view.layer.insertSublayer(gradient, atIndex: 0)
-        attvc.tableView.backgroundView = view
-        
-        presentViewController(attvc, animated: true, completion: nil)
-    }
 }

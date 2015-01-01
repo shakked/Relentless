@@ -6,9 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="Relentless" customModuleProvider="target">
             <connections>
-                <outlet property="loadingAnimator" destination="JaD-85-CdQ" id="bSO-lw-USL"/>
-                <outlet property="nameLabel" destination="AiX-no-inU" id="w6e-iP-NFG"/>
-                <outlet property="profileImageView" destination="rC7-gq-BBK" id="QXi-pD-619"/>
+                <outlet property="loadingAnimator" destination="oiG-8r-DeM" id="dP2-KV-KKF"/>
                 <outlet property="signUpButton" destination="YPJ-PL-Gbe" id="Je0-C3-M32"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,57 +16,58 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPJ-PL-Gbe">
-                    <rect key="frame" x="272" y="165" width="55" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPJ-PL-Gbe">
+                    <rect key="frame" x="175" y="450" width="250" height="50"/>
+                    <color key="backgroundColor" red="0.17647058823529413" green="0.27058823529411763" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="1LO-Y2-Rfv"/>
-                        <constraint firstAttribute="width" constant="55" id="Smj-vm-uYR"/>
+                        <constraint firstAttribute="width" constant="250" id="hlc-Cx-qcP"/>
+                        <constraint firstAttribute="height" constant="50" id="vEW-nt-wa8"/>
                     </constraints>
-                    <state key="normal" title="Sign Up">
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                    <state key="normal" title="  Login with Facebook" image="FacebookIcon">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="signUpButtonPressed:" destination="-1" eventType="touchUpInside" id="eHl-6n-Cmq"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiX-no-inU">
-                    <rect key="frame" x="151" y="136" width="297" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Relentless" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hM-v5-7Fp">
+                    <rect key="frame" x="160" y="158" width="281" height="70"/>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="60"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="oiG-8r-DeM">
+                    <rect key="frame" x="282" y="281" width="37" height="37"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="1Cq-KH-Xv5"/>
-                        <constraint firstAttribute="width" constant="297" id="ZSS-YD-ecH"/>
+                        <constraint firstAttribute="width" constant="37" id="Lo8-iK-5Qb"/>
+                        <constraint firstAttribute="height" constant="37" id="MjJ-D3-nYU"/>
                     </constraints>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rh-Xq-HiX">
+                    <rect key="frame" x="279" y="53" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rC7-gq-BBK">
-                    <rect key="frame" x="240" y="8" width="120" height="120"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="120" id="f5c-Vh-ceR"/>
-                        <constraint firstAttribute="width" constant="120" id="sly-xP-ErY"/>
-                    </constraints>
-                </imageView>
-                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="JaD-85-CdQ">
-                    <rect key="frame" x="281" y="281.5" width="37" height="37"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="37" id="q1n-vI-Su4"/>
-                        <constraint firstAttribute="height" constant="37" id="zza-WG-OTA"/>
-                    </constraints>
-                    <color key="color" red="1" green="0.20574026379999999" blue="0.23695926249999999" alpha="1" colorSpace="calibratedRGB"/>
-                </activityIndicatorView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.79012566900000003" blue="0.58163275120000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="YPJ-PL-Gbe" secondAttribute="centerX" id="77H-zb-wIx"/>
-                <constraint firstAttribute="centerY" secondItem="JaD-85-CdQ" secondAttribute="centerY" id="8f1-Q9-fOT"/>
-                <constraint firstItem="rC7-gq-BBK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="Aqy-27-tTV"/>
-                <constraint firstItem="YPJ-PL-Gbe" firstAttribute="top" secondItem="AiX-no-inU" secondAttribute="bottom" constant="8" id="Hnn-MP-RLt"/>
-                <constraint firstItem="AiX-no-inU" firstAttribute="top" secondItem="rC7-gq-BBK" secondAttribute="bottom" constant="8" id="lYa-QZ-Bhd"/>
-                <constraint firstAttribute="centerX" secondItem="rC7-gq-BBK" secondAttribute="centerX" id="qBg-6X-i6J"/>
-                <constraint firstAttribute="centerX" secondItem="AiX-no-inU" secondAttribute="centerX" id="xZu-Xv-aqX"/>
-                <constraint firstAttribute="centerX" secondItem="JaD-85-CdQ" secondAttribute="centerX" id="y8t-Ep-0rL"/>
+                <constraint firstAttribute="centerX" secondItem="YPJ-PL-Gbe" secondAttribute="centerX" id="7EU-CC-Nxt"/>
+                <constraint firstAttribute="bottom" secondItem="YPJ-PL-Gbe" secondAttribute="bottom" constant="100" id="I3b-5L-Zls"/>
+                <constraint firstAttribute="centerX" secondItem="oiG-8r-DeM" secondAttribute="centerX" id="rBa-mE-0VE"/>
+                <constraint firstAttribute="centerY" secondItem="oiG-8r-DeM" secondAttribute="centerY" id="vz4-nx-0XM"/>
             </constraints>
             <point key="canvasLocation" x="362" y="416"/>
         </view>
     </objects>
+    <resources>
+        <image name="FacebookIcon" width="33" height="33"/>
+    </resources>
 </document>

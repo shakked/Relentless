@@ -29,7 +29,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKProfile.enableUpdatesOnAccessTokenChange(true)
         
         if PFUser.currentUser() != nil {
-            self.window?.rootViewController = UINavigationController(rootViewController: FeedTableViewController(style: UITableViewStyle.Grouped))
+            let feed = SignUpViewController()
+            feed.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "FeedIcon")!, tag: 0)
+            
+            let diary = UINavigationController(rootViewController: ZSSJournalParentViewController())
+            diary.tabBarItem = UITabBarItem(title: "Journal", image: UIImage(named: "JournalIcon")!, tag: 1)
+            
+            let profile = ProfileTableViewController()
+            profile.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "ProfileIcon")!, tag: 2)
+            
+            let tbc = UITabBarController()
+            tbc.tabBar.barTintColor = UIColor.whiteColor()
+            tbc.tabBar.tintColor = GlobalStyles.greenColor()
+            tbc.viewControllers = [feed, diary, profile]
+            
+            self.window?.rootViewController = tbc
         } else {
             self.window?.rootViewController = UINavigationController(rootViewController: SignUpViewController())
         }

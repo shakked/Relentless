@@ -73,6 +73,11 @@ class ActivityEvent: NSObject, ParseWrapper {
             activityObjects.append(activity.object)
         }
         object?.addObjectsFromArray(activityObjects, forKey: Constants.Parameters.activities)
-        object?.saveEventually({ _ in })
+        object?.saveInBackgroundWithBlock({ (succeeded, _) -> Void in
+            if succeeded {
+                //update local object
+                //remove if failed
+            }
+        })
     }
 }

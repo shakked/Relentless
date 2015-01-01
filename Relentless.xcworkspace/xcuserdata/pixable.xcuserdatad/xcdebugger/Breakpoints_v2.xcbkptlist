@@ -2,4 +2,118 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Relentless/ActivityManager.swift"
+            timestampString = "458707525.837631"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "calculateAndSaveStreak(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Relentless.ActivityManager.(calculateAndSaveStreak (Relentless.ActivityManager) -&gt; ((Swift.Int, Swift.Bool) -&gt; ()) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Relentless"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pixable/Desktop/Orange%20Mclaren%20650s/Relentless/Relentless/ActivityManager.swift"
+                  timestampString = "458707525.842713"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "775">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Relentless.ActivityManager.(calculateAndSaveStreak (Relentless.ActivityManager) -&gt; ((Swift.Int, Swift.Bool) -&gt; ()) -&gt; ()).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "Relentless"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pixable/Desktop/Orange%20Mclaren%20650s/Relentless/Relentless/ActivityManager.swift"
+                  timestampString = "458707525.842884"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Relentless/ActivityManager.swift"
+            timestampString = "458703757.072855"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "calculateAndSaveStreak(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Relentless/ActivityManager.swift"
+            timestampString = "458707525.837631"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "calculateAndSaveStreak(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Relentless.ActivityManager.(calculateAndSaveStreak (Relentless.ActivityManager) -&gt; ((Swift.Int, Swift.Bool) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Relentless"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pixable/Desktop/Orange%20Mclaren%20650s/Relentless/Relentless/ActivityManager.swift"
+                  timestampString = "458707525.963828"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "1887">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Relentless.ActivityManager.(calculateAndSaveStreak (Relentless.ActivityManager) -&gt; ((Swift.Int, Swift.Bool) -&gt; ()) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Relentless"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pixable/Desktop/Orange%20Mclaren%20650s/Relentless/Relentless/ActivityManager.swift"
+                  timestampString = "458707525.964022"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "1240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

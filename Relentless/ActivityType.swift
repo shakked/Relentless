@@ -46,7 +46,9 @@ class ActivityType: NSObject, ParseWrapper {
         }
         
         PFObject.saveAllInBackground(activityObjects, block: { (succeeded, _) -> Void in
-            completion(succeeded, succeeded ? Activity.parse(activityObjects) : [])
+            activityEvent.object?.saveInBackgroundWithBlock({ (succeeded, _) -> Void in
+                completion(succeeded, succeeded ? Activity.parse(activityObjects) : [])
+            })
         })
     }
     

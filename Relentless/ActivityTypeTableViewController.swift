@@ -119,8 +119,7 @@ class ActivityTypeTableViewController: UITableViewController, DoneCancelViewDele
     }
     
     func cancelButtonPressed() {
-        dismissViewControllerAnimated(true, completion: {
-        })
+        dismissViewControllerAnimated(true, completion:nil)
     }
 }
 

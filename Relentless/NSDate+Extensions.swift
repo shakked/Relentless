@@ -23,6 +23,13 @@ extension NSDate {
         return (dayOf: midnightOnDate, nextDay: midnightDayAfter)
     }
     
+    class func tomorrowMidnight() -> NSDate {
+        let calendar = NSCalendar.currentCalendar()
+        let midnightOnDate = calendar.startOfDayForDate(NSDate())
+        let midnightDayAfter = calendar.dateByAddingUnit(NSCalendarUnit.CalendarUnitDay, value: 1, toDate: midnightOnDate, options: nil)!
+        return midnightDayAfter
+    }
+    
     func timeAgoSinceDate(date:NSDate, numericDates:Bool) -> String {
         let calendar = NSCalendar.currentCalendar()
         let unitFlags = NSCalendarUnit.CalendarUnitMinute | NSCalendarUnit.CalendarUnitHour | NSCalendarUnit.CalendarUnitDay | NSCalendarUnit.CalendarUnitWeekOfYear | NSCalendarUnit.CalendarUnitMonth | NSCalendarUnit.CalendarUnitYear | NSCalendarUnit.CalendarUnitSecond

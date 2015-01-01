@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -7,67 +7,60 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="Relentless" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="232"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqm-cb-PUh">
-                    <rect key="frame" x="567" y="0.0" width="33" height="33"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11062802_10152843498556604_2040543917207342683_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Eq4-Ut-Ebd">
+                    <rect key="frame" x="137" y="85" width="100" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="33" id="8Cq-Xi-v1H"/>
-                        <constraint firstAttribute="height" constant="33" id="uXh-fl-K1x"/>
+                        <constraint firstAttribute="height" constant="100" id="Bpj-ZM-9RP"/>
+                        <constraint firstAttribute="width" constant="100" id="KK0-KZ-EIy"/>
                     </constraints>
-                    <state key="normal" image="RightArrowIcon">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="goRightButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="E44-cf-i8W"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wv-UG-Eir">
-                    <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
-                    <color key="backgroundColor" red="0.34502016730057844" green="0.55979588540207192" blue="0.7558751106262207" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zachary Shakked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPl-6d-REN">
+                    <rect key="frame" x="87" y="193" width="200" height="31"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="33" id="4Qe-60-Xe2"/>
-                        <constraint firstAttribute="width" constant="33" id="Uu8-ux-fsI"/>
+                        <constraint firstAttribute="width" constant="200" id="EBA-nh-T5k"/>
+                        <constraint firstAttribute="height" constant="31" id="RSq-WC-L2v"/>
                     </constraints>
-                    <state key="normal" image="LeftArrowIcon">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="goLeftButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="eh7-6c-tY4"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday, Jun 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duE-tQ-bnV">
-                    <rect key="frame" x="225" y="0.0" width="150" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="150" id="ARo-An-3pR"/>
-                        <constraint firstAttribute="height" constant="30" id="mPB-7D-8L2"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="1" height="1"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.066666666669999999" green="0.78823529410000004" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="duE-tQ-bnV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5gB-PW-hmD"/>
-                <constraint firstItem="2Wv-UG-Eir" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D58-qf-IfV"/>
-                <constraint firstItem="2Wv-UG-Eir" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HBl-Vi-SF4"/>
-                <constraint firstItem="eqm-cb-PUh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bdw-8j-PhJ"/>
-                <constraint firstAttribute="centerX" secondItem="duE-tQ-bnV" secondAttribute="centerX" id="cBK-Ph-ENr"/>
-                <constraint firstAttribute="trailing" secondItem="eqm-cb-PUh" secondAttribute="trailing" id="eZL-Ca-lK8"/>
+                <constraint firstItem="IPl-6d-REN" firstAttribute="top" secondItem="Eq4-Ut-Ebd" secondAttribute="bottom" constant="8" id="17e-QV-v3G"/>
+                <constraint firstAttribute="centerX" secondItem="IPl-6d-REN" secondAttribute="centerX" constant="0.5" id="8az-kr-1pJ"/>
+                <constraint firstAttribute="centerX" secondItem="Eq4-Ut-Ebd" secondAttribute="centerX" constant="0.5" id="A5q-ey-quK"/>
+                <constraint firstAttribute="bottom" secondItem="IPl-6d-REN" secondAttribute="bottom" constant="8" id="FI5-eX-JuL"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="dateLabel" destination="duE-tQ-bnV" id="yD8-ER-pUw"/>
-                <outlet property="goLeftButton" destination="2Wv-UG-Eir" id="T62-oE-Jo4"/>
-                <outlet property="goRightButton" destination="eqm-cb-PUh" id="3Vx-wN-mb5"/>
+                <outlet property="nameLabel" destination="IPl-6d-REN" id="fbQ-el-Yng"/>
+                <outlet property="profileImageView" destination="Eq4-Ut-Ebd" id="HEq-rU-GqP"/>
             </connections>
-            <point key="canvasLocation" x="424" y="192.5"/>
+            <point key="canvasLocation" x="308.5" y="146"/>
         </view>
     </objects>
     <resources>
-        <image name="LeftArrowIcon" width="33" height="33"/>
-        <image name="RightArrowIcon" width="33" height="33"/>
+        <image name="11062802_10152843498556604_2040543917207342683_n.jpg" width="320" height="320"/>
     </resources>
 </document>

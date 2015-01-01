@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdD-27-DZ2">
-                                <rect key="frame" x="259.5" y="66" width="117.5" height="30"/>
+                                <rect key="frame" x="259.5" y="60" width="117.5" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gTo-rw-Wp7"/>
                                 </constraints>
@@ -111,7 +111,7 @@
                             <constraint firstItem="rxd-zf-t1n" firstAttribute="leading" secondItem="RWB-cZ-RhV" secondAttribute="trailing" constant="8" id="n4t-YR-5sh"/>
                             <constraint firstAttribute="trailing" secondItem="L07-V8-ku2" secondAttribute="trailing" id="nTV-wo-y9P"/>
                             <constraint firstItem="YLU-J8-1de" firstAttribute="top" secondItem="Pga-LI-Gfc" secondAttribute="top" constant="8" id="nWe-3S-LqD"/>
-                            <constraint firstAttribute="bottom" secondItem="UdD-27-DZ2" secondAttribute="bottom" id="uCi-aj-7TP"/>
+                            <constraint firstAttribute="bottom" secondItem="UdD-27-DZ2" secondAttribute="bottom" constant="6" id="uCi-aj-7TP"/>
                             <constraint firstAttribute="bottom" secondItem="aCD-FN-PgJ" secondAttribute="bottom" id="yDI-z0-3Kj"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>

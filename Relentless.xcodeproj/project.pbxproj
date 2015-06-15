@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722C51B2E631D00D17988 /* AppDelegate.swift */; };
+		55F722C81B2E631D00D17988 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722C71B2E631D00D17988 /* ViewController.swift */; };
+		55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F722CC1B2E631D00D17988 /* Images.xcassets */; };
+		55F722D01B2E631D00D17988 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F722CE1B2E631D00D17988 /* LaunchScreen.xib */; };
+		55F722DC1B2E631D00D17988 /* RelentlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722DB1B2E631D00D17988 /* RelentlessTests.swift */; };
+		55F722E71B2E635400D17988 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722E51B2E635400D17988 /* HomeViewController.swift */; };
+		55F722E81B2E635400D17988 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F722E61B2E635400D17988 /* HomeViewController.xib */; };
+		55F722EF1B2E684200D17988 /* WhatDidYouDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722EE1B2E684200D17988 /* WhatDidYouDoTableViewController.swift */; };
+		55F722F11B2E68B800D17988 /* WorkOutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722F01B2E68B800D17988 /* WorkOutType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55F722D61B2E631D00D17988 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F722B81B2E631D00D17988 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55F722BF1B2E631D00D17988;
+			remoteInfo = Relentless;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55F722C01B2E631D00D17988 /* Relentless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relentless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F722C41B2E631D00D17988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F722C51B2E631D00D17988 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55F722C71B2E631D00D17988 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55F722CC1B2E631D00D17988 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		55F722CF1B2E631D00D17988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		55F722D51B2E631D00D17988 /* RelentlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelentlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F722DA1B2E631D00D17988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F722DB1B2E631D00D17988 /* RelentlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelentlessTests.swift; sourceTree = "<group>"; };
+		55F722E51B2E635400D17988 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		55F722E61B2E635400D17988 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		55F722EE1B2E684200D17988 /* WhatDidYouDoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatDidYouDoTableViewController.swift; sourceTree = "<group>"; };
+		55F722F01B2E68B800D17988 /* WorkOutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOutType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55F722BD1B2E631D00D17988 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F722D21B2E631D00D17988 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55F722B71B2E631D00D17988 = {
+			isa = PBXGroup;
+			children = (
+				55F722C21B2E631D00D17988 /* Relentless */,
+				55F722D81B2E631D00D17988 /* RelentlessTests */,
+				55F722C11B2E631D00D17988 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55F722C11B2E631D00D17988 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55F722C01B2E631D00D17988 /* Relentless.app */,
+				55F722D51B2E631D00D17988 /* RelentlessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55F722C21B2E631D00D17988 /* Relentless */ = {
+			isa = PBXGroup;
+			children = (
+				55F722C51B2E631D00D17988 /* AppDelegate.swift */,
+				55F722E51B2E635400D17988 /* HomeViewController.swift */,
+				55F722E61B2E635400D17988 /* HomeViewController.xib */,
+				55F722EE1B2E684200D17988 /* WhatDidYouDoTableViewController.swift */,
+				55F722F01B2E68B800D17988 /* WorkOutType.swift */,
+				55F722ED1B2E64B000D17988 /* On Boarding */,
+				55F722C71B2E631D00D17988 /* ViewController.swift */,
+				55F722CC1B2E631D00D17988 /* Images.xcassets */,
+				55F722CE1B2E631D00D17988 /* LaunchScreen.xib */,
+				55F722C31B2E631D00D17988 /* Supporting Files */,
+			);
+			path = Relentless;
+			sourceTree = "<group>";
+		};
+		55F722C31B2E631D00D17988 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55F722C41B2E631D00D17988 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55F722D81B2E631D00D17988 /* RelentlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				55F722DB1B2E631D00D17988 /* RelentlessTests.swift */,
+				55F722D91B2E631D00D17988 /* Supporting Files */,
+			);
+			path = RelentlessTests;
+			sourceTree = "<group>";
+		};
+		55F722D91B2E631D00D17988 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55F722DA1B2E631D00D17988 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55F722ED1B2E64B000D17988 /* On Boarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "On Boarding";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55F722BF1B2E631D00D17988 /* Relentless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F722DF1B2E631D00D17988 /* Build configuration list for PBXNativeTarget "Relentless" */;
+			buildPhases = (
+				55F722BC1B2E631D00D17988 /* Sources */,
+				55F722BD1B2E631D00D17988 /* Frameworks */,
+				55F722BE1B2E631D00D17988 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Relentless;
+			productName = Relentless;
+			productReference = 55F722C01B2E631D00D17988 /* Relentless.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55F722D41B2E631D00D17988 /* RelentlessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F722E21B2E631D00D17988 /* Build configuration list for PBXNativeTarget "RelentlessTests" */;
+			buildPhases = (
+				55F722D11B2E631D00D17988 /* Sources */,
+				55F722D21B2E631D00D17988 /* Frameworks */,
+				55F722D31B2E631D00D17988 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55F722D71B2E631D00D17988 /* PBXTargetDependency */,
+			);
+			name = RelentlessTests;
+			productName = RelentlessTests;
+			productReference = 55F722D51B2E631D00D17988 /* RelentlessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55F722B81B2E631D00D17988 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Zachary Shakked";
+				TargetAttributes = {
+					55F722BF1B2E631D00D17988 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					55F722D41B2E631D00D17988 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 55F722BF1B2E631D00D17988;
+					};
+				};
+			};
+			buildConfigurationList = 55F722BB1B2E631D00D17988 /* Build configuration list for PBXProject "Relentless" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55F722B71B2E631D00D17988;
+			productRefGroup = 55F722C11B2E631D00D17988 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55F722BF1B2E631D00D17988 /* Relentless */,
+				55F722D41B2E631D00D17988 /* RelentlessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55F722BE1B2E631D00D17988 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F722D01B2E631D00D17988 /* LaunchScreen.xib in Resources */,
+				55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */,
+				55F722E81B2E635400D17988 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F722D31B2E631D00D17988 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55F722BC1B2E631D00D17988 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F722EF1B2E684200D17988 /* WhatDidYouDoTableViewController.swift in Sources */,
+				55F722C81B2E631D00D17988 /* ViewController.swift in Sources */,
+				55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */,
+				55F722E71B2E635400D17988 /* HomeViewController.swift in Sources */,
+				55F722F11B2E68B800D17988 /* WorkOutType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F722D11B2E631D00D17988 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F722DC1B2E631D00D17988 /* RelentlessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55F722D71B2E631D00D17988 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55F722BF1B2E631D00D17988 /* Relentless */;
+			targetProxy = 55F722D61B2E631D00D17988 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55F722CE1B2E631D00D17988 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55F722CF1B2E631D00D17988 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55F722DD1B2E631D00D17988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55F722DE1B2E631D00D17988 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55F722E01B2E631D00D17988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Relentless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55F722E11B2E631D00D17988 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Relentless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55F722E31B2E631D00D17988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RelentlessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relentless.app/Relentless";
+			};
+			name = Debug;
+		};
+		55F722E41B2E631D00D17988 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RelentlessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relentless.app/Relentless";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55F722BB1B2E631D00D17988 /* Build configuration list for PBXProject "Relentless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F722DD1B2E631D00D17988 /* Debug */,
+				55F722DE1B2E631D00D17988 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55F722DF1B2E631D00D17988 /* Build configuration list for PBXNativeTarget "Relentless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F722E01B2E631D00D17988 /* Debug */,
+				55F722E11B2E631D00D17988 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		55F722E21B2E631D00D17988 /* Build configuration list for PBXNativeTarget "RelentlessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F722E31B2E631D00D17988 /* Debug */,
+				55F722E41B2E631D00D17988 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55F722B81B2E631D00D17988 /* Project object */;
+}

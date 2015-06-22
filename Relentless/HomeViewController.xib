@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Relentless" customModuleProvider="target">
             <connections>
+                <outlet property="didYouWorkOutLabel" destination="Qf0-H5-88G" id="hll-7C-0FF"/>
                 <outlet property="restedButton" destination="AoV-NK-keB" id="vjG-jJ-FRW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="yesButton" destination="hOO-Iw-6NI" id="B40-yA-ltZ"/>
@@ -35,6 +36,9 @@
                             <integer key="value" value="2"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="yesButtonPressed:" destination="-1" eventType="touchUpInside" id="peB-mN-y79"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoV-NK-keB">
                     <rect key="frame" x="97.5" y="333" width="125" height="125"/>
@@ -44,7 +48,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
                     <state key="normal" title="I Rested.">
-                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.50196078431372548" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -55,6 +59,9 @@
                             <integer key="value" value="2"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iRestedButtonPressed:" destination="-1" eventType="touchUpInside" id="8nX-18-Bhh"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you work out today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf0-H5-88G">
                     <rect key="frame" x="8" y="8" width="304" height="50"/>

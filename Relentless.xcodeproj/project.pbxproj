@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		554B1D4E1B30DBDF00987933 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D4C1B30DBDF00987933 /* ActivityCell.swift */; };
+		554B1D4F1B30DBDF00987933 /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554B1D4D1B30DBDF00987933 /* ActivityCell.xib */; };
+		554B1D511B30DDA000987933 /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D501B30DDA000987933 /* ActivityManager.swift */; };
+		554B1D541B30DDB600987933 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D531B30DDB600987933 /* Activity.swift */; };
+		554B1D561B30DDD300987933 /* Weights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D551B30DDD300987933 /* Weights.swift */; };
+		554B1D581B30DDDC00987933 /* Cardio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D571B30DDDC00987933 /* Cardio.swift */; };
+		554B1D5B1B30E55700987933 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D5A1B30E55700987933 /* UIColor+Hex.swift */; };
+		554B1D5D1B30E5B400987933 /* GlobalStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D5C1B30E5B400987933 /* GlobalStyles.swift */; };
+		555237BA1B3706BA00721335 /* UIBarButtonItem+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237B81B3706BA00721335 /* UIBarButtonItem+Helpers.swift */; };
+		555237BB1B3706BA00721335 /* UINavigationController+EasyNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237B91B3706BA00721335 /* UINavigationController+EasyNavBar.swift */; };
+		555237BD1B370DE500721335 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237BC1B370DE500721335 /* File.swift */; };
+		555237BF1B38024400721335 /* NSDate+EasyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237BE1B38024400721335 /* NSDate+EasyString.swift */; };
+		555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */; };
+		55CAD7FC1B30EB6300EB3DCF /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD7FB1B30EB6300EB3DCF /* ActivityEvent.swift */; };
+		55CAD7FE1B30EBBD00EB3DCF /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD7FD1B30EBBD00EB3DCF /* Rest.swift */; };
 		55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722C51B2E631D00D17988 /* AppDelegate.swift */; };
 		55F722C81B2E631D00D17988 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722C71B2E631D00D17988 /* ViewController.swift */; };
 		55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F722CC1B2E631D00D17988 /* Images.xcassets */; };
@@ -29,6 +44,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		554B1D4C1B30DBDF00987933 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		554B1D4D1B30DBDF00987933 /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
+		554B1D501B30DDA000987933 /* ActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
+		554B1D531B30DDB600987933 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		554B1D551B30DDD300987933 /* Weights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weights.swift; sourceTree = "<group>"; };
+		554B1D571B30DDDC00987933 /* Cardio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cardio.swift; sourceTree = "<group>"; };
+		554B1D591B30E15600987933 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
+		554B1D5A1B30E55700987933 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		554B1D5C1B30E5B400987933 /* GlobalStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalStyles.swift; sourceTree = "<group>"; };
+		555237B81B3706BA00721335 /* UIBarButtonItem+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Helpers.swift"; sourceTree = "<group>"; };
+		555237B91B3706BA00721335 /* UINavigationController+EasyNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+EasyNavBar.swift"; sourceTree = "<group>"; };
+		555237BC1B370DE500721335 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		555237BE1B38024400721335 /* NSDate+EasyString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+EasyString.swift"; sourceTree = "<group>"; };
+		555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSSJournalParentViewController.swift; sourceTree = "<group>"; };
+		55CAD7FB1B30EB6300EB3DCF /* ActivityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
+		55CAD7FD1B30EBBD00EB3DCF /* Rest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
 		55F722C01B2E631D00D17988 /* Relentless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relentless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F722C41B2E631D00D17988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55F722C51B2E631D00D17988 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +93,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		554B1D521B30DDA600987933 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				554B1D501B30DDA000987933 /* ActivityManager.swift */,
+				55CAD7FB1B30EB6300EB3DCF /* ActivityEvent.swift */,
+				555237BC1B370DE500721335 /* File.swift */,
+				554B1D531B30DDB600987933 /* Activity.swift */,
+				554B1D551B30DDD300987933 /* Weights.swift */,
+				554B1D571B30DDDC00987933 /* Cardio.swift */,
+				55CAD7FD1B30EBBD00EB3DCF /* Rest.swift */,
+				554B1D591B30E15600987933 /* Playground.playground */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		55F722B71B2E631D00D17988 = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +130,13 @@
 			isa = PBXGroup;
 			children = (
 				55F722C51B2E631D00D17988 /* AppDelegate.swift */,
+				555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */,
 				55F722E51B2E635400D17988 /* HomeViewController.swift */,
 				55F722E61B2E635400D17988 /* HomeViewController.xib */,
 				55F722EE1B2E684200D17988 /* WhatDidYouDoTableViewController.swift */,
+				554B1D4C1B30DBDF00987933 /* ActivityCell.swift */,
+				554B1D4D1B30DBDF00987933 /* ActivityCell.xib */,
+				554B1D521B30DDA600987933 /* Model */,
 				55F722F01B2E68B800D17988 /* WorkOutType.swift */,
 				55F722ED1B2E64B000D17988 /* On Boarding */,
 				55F722C71B2E631D00D17988 /* ViewController.swift */,
@@ -100,6 +150,11 @@
 		55F722C31B2E631D00D17988 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				555237B81B3706BA00721335 /* UIBarButtonItem+Helpers.swift */,
+				555237B91B3706BA00721335 /* UINavigationController+EasyNavBar.swift */,
+				554B1D5C1B30E5B400987933 /* GlobalStyles.swift */,
+				555237BE1B38024400721335 /* NSDate+EasyString.swift */,
+				554B1D5A1B30E55700987933 /* UIColor+Hex.swift */,
 				55F722C41B2E631D00D17988 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -211,6 +266,7 @@
 			files = (
 				55F722D01B2E631D00D17988 /* LaunchScreen.xib in Resources */,
 				55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */,
+				554B1D4F1B30DBDF00987933 /* ActivityCell.xib in Resources */,
 				55F722E81B2E635400D17988 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,8 +288,22 @@
 				55F722EF1B2E684200D17988 /* WhatDidYouDoTableViewController.swift in Sources */,
 				55F722C81B2E631D00D17988 /* ViewController.swift in Sources */,
 				55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */,
+				55CAD7FE1B30EBBD00EB3DCF /* Rest.swift in Sources */,
+				554B1D511B30DDA000987933 /* ActivityManager.swift in Sources */,
+				555237BF1B38024400721335 /* NSDate+EasyString.swift in Sources */,
 				55F722E71B2E635400D17988 /* HomeViewController.swift in Sources */,
+				554B1D5B1B30E55700987933 /* UIColor+Hex.swift in Sources */,
+				555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */,
+				554B1D4E1B30DBDF00987933 /* ActivityCell.swift in Sources */,
+				554B1D541B30DDB600987933 /* Activity.swift in Sources */,
 				55F722F11B2E68B800D17988 /* WorkOutType.swift in Sources */,
+				55CAD7FC1B30EB6300EB3DCF /* ActivityEvent.swift in Sources */,
+				555237BD1B370DE500721335 /* File.swift in Sources */,
+				555237BB1B3706BA00721335 /* UINavigationController+EasyNavBar.swift in Sources */,
+				554B1D561B30DDD300987933 /* Weights.swift in Sources */,
+				555237BA1B3706BA00721335 /* UIBarButtonItem+Helpers.swift in Sources */,
+				554B1D5D1B30E5B400987933 /* GlobalStyles.swift in Sources */,
+				554B1D581B30DDDC00987933 /* Cardio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +493,7 @@
 				55F722E11B2E631D00D17988 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55F722E21B2E631D00D17988 /* Build configuration list for PBXNativeTarget "RelentlessTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +502,7 @@
 				55F722E41B2E631D00D17988 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

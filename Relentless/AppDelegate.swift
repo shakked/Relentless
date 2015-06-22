@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.whiteColor()
         self.window?.makeKeyAndVisible()
         
-        self.window?.rootViewController = HomeViewController()
+        self.window?.rootViewController = UINavigationController(rootViewController: ZSSJournalParentViewController())
         
         return true
     }

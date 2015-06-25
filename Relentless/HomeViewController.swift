@@ -89,7 +89,9 @@ class HomeViewController: UIViewController {
     }
     
     func selectRestedButton() {
-        activityEvent.addRest()
+        if !activityEvent.has("Rest") {
+            activityEvent.addRest()
+        }
         configureYesButtonIfNeed()
         UIView.animateWithDuration(0.50, animations: {
             self.restedButton.backgroundColor = GlobalStyles.blueColor()

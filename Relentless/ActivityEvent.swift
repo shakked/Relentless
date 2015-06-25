@@ -52,7 +52,7 @@ class ActivityEvent: NSManagedObject, Printable {
         activity.name = name
         activity.energyConsumer = NSNumber(bool: isEnergyConsumer)
         activity.activityEvent = self
-        println("Added \(activity): \(self)")
+        println("Added \(activity.name): \(self)")
     }
     
     func removeActivity(activityName: String) {

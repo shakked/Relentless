@@ -154,6 +154,9 @@
         
         self.privateActivityEvents = [[NSMutableArray alloc] initWithArray:result];
     }
+    for (ActivityEvent *event in self.privateActivityEvents) {
+        NSLog(@"Have event for date: %@", [event.date string]);
+    }
 }
 
 @end

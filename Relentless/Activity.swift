@@ -2,22 +2,19 @@
 //  Activity.swift
 //  Relentless
 //
-//  Created by pixable on 6/16/15.
+//  Created by pixable on 6/24/15.
 //  Copyright (c) 2015 Zachary Shakked. All rights reserved.
 //
 
 import Foundation
+import CoreData
 
-class Activity: AnyObject, Hashable {
-    var name : String!
-    var energyConsumer : Bool = true
-    var hashValue : Int {
-        get {
-            return name.hashValue
-        }
-    }
-}
 
-func ==(lhs: Activity, rhs: Activity) -> Bool {
-    return lhs.name == rhs.name
+class Activity: NSManagedObject {
+
+    @NSManaged var energyConsumer: NSNumber
+    @NSManaged var name: String
+    @NSManaged var activityEvent: NSManagedObject
+    
+
 }

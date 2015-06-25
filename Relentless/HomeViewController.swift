@@ -9,14 +9,15 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    weak var journalParentViewController : ZSSJournalParentViewController!
     @IBOutlet weak var didYouWorkOutLabel: UILabel!
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var restedButton: UIButton!
-    var activityEvent : ActivityEvent
+
+    var activityEvent: ActivityEvent
     
     required init(date: NSDate) {
-        self.activityEvent = ActivityManager.sharedManager.activityEvent(date)
+        activityEvent = ActivityStore.sharedStore().activityEventForDate(date)
         super.init(nibName: "HomeViewController", bundle: NSBundle.mainBundle())
     }
     
@@ -30,7 +31,7 @@ class HomeViewController: UIViewController {
     }
     
     func changeDate(date: NSDate) {
-        activityEvent = ActivityManager.sharedManager.activityEvent(date)
+        activityEvent = ActivityStore.sharedStore().activityEventForDate(date)
         configureViews()
     }
     
@@ -46,8 +47,9 @@ class HomeViewController: UIViewController {
     func configureButtons() {
         yesButton.layer.borderColor = GlobalStyles.greenColor().CGColor
         restedButton.layer.borderColor = GlobalStyles.blueColor().CGColor
+        
         if activityEvent.activities.count > 0 {
-            activityEvent.hasEnergyConsumer() ? selectYesButton() : selectRestedButton()
+            activityEvent.hasEnergyConsumers() ? selectYesButton() : selectRestedButton()
         } else {
             unselectYesButton()
             unselectRestedButton()
@@ -59,12 +61,24 @@ class HomeViewController: UIViewController {
         configureYesButtonIfNeed()
     }
 
+    @IBAction func goLeftButtonPressed(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func goRightButtonPressed(sender: AnyObject) {
+
+    }
+    
     @IBAction func yesButtonPressed(sender: AnyObject) {
         showWhatDidYouDoTable()
     }
     
     @IBAction func iRestedButtonPressed(sender: AnyObject) {
-        activityEvent.has(Rest()) ? unselectRestedButton() : selectRestedButton()
+        if activityEvent.has("Rest") {
+            unselectRestedButton()
+        } else {
+            selectRestedButton()
+        }
     }
     
     func showWhatDidYouDoTable() {
@@ -75,8 +89,7 @@ class HomeViewController: UIViewController {
     }
     
     func selectRestedButton() {
-        activityEvent.removeAll()
-        activityEvent.add(Rest())
+        activityEvent.addRest()
         configureYesButtonIfNeed()
         UIView.animateWithDuration(0.50, animations: {
             self.restedButton.backgroundColor = GlobalStyles.blueColor()
@@ -85,7 +98,7 @@ class HomeViewController: UIViewController {
     }
     
     func unselectRestedButton() {
-        activityEvent.remove(Rest())
+        activityEvent.removeRest()
         UIView.animateWithDuration(0.50, animations: {
             self.restedButton.backgroundColor = UIColor.clearColor()
             self.restedButton.setTitleColor(GlobalStyles.blueColor(), forState: .Normal)
@@ -93,7 +106,7 @@ class HomeViewController: UIViewController {
     }
     
     func configureYesButtonIfNeed() {
-        if activityEvent.hasEnergyConsumer() {
+        if activityEvent.hasEnergyConsumers() {
             selectYesButton()
             unselectRestedButton()
         } else {

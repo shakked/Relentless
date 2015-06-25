@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOO-Iw-6NI">
-                    <rect key="frame" x="72.5" y="108" width="175" height="175"/>
+                    <rect key="frame" x="72" y="108" width="175" height="175"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="175" id="1BH-4n-9JF"/>
                         <constraint firstAttribute="height" constant="175" id="Ue3-cP-1s7"/>
@@ -41,7 +41,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoV-NK-keB">
-                    <rect key="frame" x="97.5" y="333" width="125" height="125"/>
+                    <rect key="frame" x="97" y="333" width="125" height="125"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="125" id="TmD-k2-mla"/>
                         <constraint firstAttribute="width" constant="125" id="dkz-v0-oFa"/>
@@ -64,7 +64,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you work out today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf0-H5-88G">
-                    <rect key="frame" x="8" y="8" width="304" height="50"/>
+                    <rect key="frame" x="7" y="8" width="304" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="sgd-yA-f8p"/>
                     </constraints>
@@ -75,15 +75,16 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Qf0-H5-88G" secondAttribute="trailing" constant="8" id="GXc-tO-NYh"/>
-                <constraint firstItem="Qf0-H5-88G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="Hmd-jw-cq6"/>
+                <constraint firstItem="Qf0-H5-88G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="DKq-bk-VIV"/>
+                <constraint firstAttribute="trailing" secondItem="Qf0-H5-88G" secondAttribute="trailing" constant="9" id="GXc-tO-NYh"/>
                 <constraint firstItem="hOO-Iw-6NI" firstAttribute="top" secondItem="Qf0-H5-88G" secondAttribute="bottom" constant="50" id="NTT-V4-6rv"/>
                 <constraint firstAttribute="centerX" secondItem="AoV-NK-keB" secondAttribute="centerX" id="hwd-WI-rbg"/>
                 <constraint firstAttribute="centerX" secondItem="hOO-Iw-6NI" secondAttribute="centerX" id="u2p-yI-hhO"/>
-                <constraint firstItem="Qf0-H5-88G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="wZw-h8-ccq"/>
+                <constraint firstItem="Qf0-H5-88G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="7" id="wZw-h8-ccq"/>
                 <constraint firstItem="AoV-NK-keB" firstAttribute="top" secondItem="hOO-Iw-6NI" secondAttribute="bottom" constant="50" id="zor-xE-6dF"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="379" y="413"/>
         </view>
     </objects>
 </document>

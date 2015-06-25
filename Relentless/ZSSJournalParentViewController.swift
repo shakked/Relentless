@@ -36,8 +36,13 @@ import UIKit
         configureNavBar()
     }
     
+    func goLeftButtonPressed() {
+        println("Go left!!!!")
+    }
+    
     func configureNavBar() -> Void {
         navigationController?.configureNavBar(UIColor.whiteColor(), textColor: GlobalStyles.greenColor())
+        title = NSDate().string()
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {

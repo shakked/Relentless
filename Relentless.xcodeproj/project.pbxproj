@@ -10,18 +10,18 @@
 		554B1D4E1B30DBDF00987933 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D4C1B30DBDF00987933 /* ActivityCell.swift */; };
 		554B1D4F1B30DBDF00987933 /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554B1D4D1B30DBDF00987933 /* ActivityCell.xib */; };
 		554B1D511B30DDA000987933 /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D501B30DDA000987933 /* ActivityManager.swift */; };
-		554B1D541B30DDB600987933 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D531B30DDB600987933 /* Activity.swift */; };
-		554B1D561B30DDD300987933 /* Weights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D551B30DDD300987933 /* Weights.swift */; };
-		554B1D581B30DDDC00987933 /* Cardio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D571B30DDDC00987933 /* Cardio.swift */; };
 		554B1D5B1B30E55700987933 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D5A1B30E55700987933 /* UIColor+Hex.swift */; };
 		554B1D5D1B30E5B400987933 /* GlobalStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D5C1B30E5B400987933 /* GlobalStyles.swift */; };
 		555237BA1B3706BA00721335 /* UIBarButtonItem+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237B81B3706BA00721335 /* UIBarButtonItem+Helpers.swift */; };
 		555237BB1B3706BA00721335 /* UINavigationController+EasyNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237B91B3706BA00721335 /* UINavigationController+EasyNavBar.swift */; };
-		555237BD1B370DE500721335 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237BC1B370DE500721335 /* File.swift */; };
 		555237BF1B38024400721335 /* NSDate+EasyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237BE1B38024400721335 /* NSDate+EasyString.swift */; };
 		555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */; };
-		55CAD7FC1B30EB6300EB3DCF /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD7FB1B30EB6300EB3DCF /* ActivityEvent.swift */; };
-		55CAD7FE1B30EBBD00EB3DCF /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD7FD1B30EBBD00EB3DCF /* Rest.swift */; };
+		555237CA1B386BBC00721335 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237C81B386BBC00721335 /* HeaderView.swift */; };
+		555237CB1B386BBC00721335 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 555237C91B386BBC00721335 /* HeaderView.xib */; };
+		5571A4351B3B31880057F845 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4331B3B31880057F845 /* Model.xcdatamodeld */; };
+		5571A43B1B3B33DB0057F845 /* ActivityStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5571A43A1B3B33DB0057F845 /* ActivityStore.m */; };
+		5571A4431B3B40980057F845 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4421B3B40980057F845 /* Activity.swift */; };
+		5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4441B3B40F70057F845 /* ActivityEvent.swift */; };
 		55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722C51B2E631D00D17988 /* AppDelegate.swift */; };
 		55F722C81B2E631D00D17988 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722C71B2E631D00D17988 /* ViewController.swift */; };
 		55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F722CC1B2E631D00D17988 /* Images.xcassets */; };
@@ -47,19 +47,21 @@
 		554B1D4C1B30DBDF00987933 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		554B1D4D1B30DBDF00987933 /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
 		554B1D501B30DDA000987933 /* ActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
-		554B1D531B30DDB600987933 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		554B1D551B30DDD300987933 /* Weights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weights.swift; sourceTree = "<group>"; };
-		554B1D571B30DDDC00987933 /* Cardio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cardio.swift; sourceTree = "<group>"; };
 		554B1D591B30E15600987933 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		554B1D5A1B30E55700987933 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		554B1D5C1B30E5B400987933 /* GlobalStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalStyles.swift; sourceTree = "<group>"; };
+		554BD5A11B399DF500787DD9 /* Relentless-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Relentless-Bridging-Header.h"; sourceTree = "<group>"; };
 		555237B81B3706BA00721335 /* UIBarButtonItem+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Helpers.swift"; sourceTree = "<group>"; };
 		555237B91B3706BA00721335 /* UINavigationController+EasyNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+EasyNavBar.swift"; sourceTree = "<group>"; };
-		555237BC1B370DE500721335 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		555237BE1B38024400721335 /* NSDate+EasyString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+EasyString.swift"; sourceTree = "<group>"; };
 		555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSSJournalParentViewController.swift; sourceTree = "<group>"; };
-		55CAD7FB1B30EB6300EB3DCF /* ActivityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
-		55CAD7FD1B30EBBD00EB3DCF /* Rest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
+		555237C81B386BBC00721335 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = Relentless/HeaderView.swift; sourceTree = "<group>"; };
+		555237C91B386BBC00721335 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = Relentless/HeaderView.xib; sourceTree = "<group>"; };
+		5571A4341B3B31880057F845 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5571A4391B3B33DB0057F845 /* ActivityStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityStore.h; sourceTree = "<group>"; };
+		5571A43A1B3B33DB0057F845 /* ActivityStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityStore.m; sourceTree = "<group>"; };
+		5571A4421B3B40980057F845 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		5571A4441B3B40F70057F845 /* ActivityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
 		55F722C01B2E631D00D17988 /* Relentless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relentless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F722C41B2E631D00D17988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55F722C51B2E631D00D17988 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,13 +98,12 @@
 		554B1D521B30DDA600987933 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5571A4441B3B40F70057F845 /* ActivityEvent.swift */,
+				5571A4421B3B40980057F845 /* Activity.swift */,
+				5571A4391B3B33DB0057F845 /* ActivityStore.h */,
+				5571A43A1B3B33DB0057F845 /* ActivityStore.m */,
+				5571A4331B3B31880057F845 /* Model.xcdatamodeld */,
 				554B1D501B30DDA000987933 /* ActivityManager.swift */,
-				55CAD7FB1B30EB6300EB3DCF /* ActivityEvent.swift */,
-				555237BC1B370DE500721335 /* File.swift */,
-				554B1D531B30DDB600987933 /* Activity.swift */,
-				554B1D551B30DDD300987933 /* Weights.swift */,
-				554B1D571B30DDDC00987933 /* Cardio.swift */,
-				55CAD7FD1B30EBBD00EB3DCF /* Rest.swift */,
 				554B1D591B30E15600987933 /* Playground.playground */,
 			);
 			name = Model;
@@ -111,6 +112,8 @@
 		55F722B71B2E631D00D17988 = {
 			isa = PBXGroup;
 			children = (
+				555237C81B386BBC00721335 /* HeaderView.swift */,
+				555237C91B386BBC00721335 /* HeaderView.xib */,
 				55F722C21B2E631D00D17988 /* Relentless */,
 				55F722D81B2E631D00D17988 /* RelentlessTests */,
 				55F722C11B2E631D00D17988 /* Products */,
@@ -143,6 +146,7 @@
 				55F722CC1B2E631D00D17988 /* Images.xcassets */,
 				55F722CE1B2E631D00D17988 /* LaunchScreen.xib */,
 				55F722C31B2E631D00D17988 /* Supporting Files */,
+				554BD5A11B399DF500787DD9 /* Relentless-Bridging-Header.h */,
 			);
 			path = Relentless;
 			sourceTree = "<group>";
@@ -266,6 +270,7 @@
 			files = (
 				55F722D01B2E631D00D17988 /* LaunchScreen.xib in Resources */,
 				55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */,
+				555237CB1B386BBC00721335 /* HeaderView.xib in Resources */,
 				554B1D4F1B30DBDF00987933 /* ActivityCell.xib in Resources */,
 				55F722E81B2E635400D17988 /* HomeViewController.xib in Resources */,
 			);
@@ -288,22 +293,21 @@
 				55F722EF1B2E684200D17988 /* WhatDidYouDoTableViewController.swift in Sources */,
 				55F722C81B2E631D00D17988 /* ViewController.swift in Sources */,
 				55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */,
-				55CAD7FE1B30EBBD00EB3DCF /* Rest.swift in Sources */,
 				554B1D511B30DDA000987933 /* ActivityManager.swift in Sources */,
 				555237BF1B38024400721335 /* NSDate+EasyString.swift in Sources */,
 				55F722E71B2E635400D17988 /* HomeViewController.swift in Sources */,
+				5571A4431B3B40980057F845 /* Activity.swift in Sources */,
 				554B1D5B1B30E55700987933 /* UIColor+Hex.swift in Sources */,
+				5571A4351B3B31880057F845 /* Model.xcdatamodeld in Sources */,
 				555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */,
 				554B1D4E1B30DBDF00987933 /* ActivityCell.swift in Sources */,
-				554B1D541B30DDB600987933 /* Activity.swift in Sources */,
 				55F722F11B2E68B800D17988 /* WorkOutType.swift in Sources */,
-				55CAD7FC1B30EB6300EB3DCF /* ActivityEvent.swift in Sources */,
-				555237BD1B370DE500721335 /* File.swift in Sources */,
+				5571A43B1B3B33DB0057F845 /* ActivityStore.m in Sources */,
+				5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */,
 				555237BB1B3706BA00721335 /* UINavigationController+EasyNavBar.swift in Sources */,
-				554B1D561B30DDD300987933 /* Weights.swift in Sources */,
+				555237CA1B386BBC00721335 /* HeaderView.swift in Sources */,
 				555237BA1B3706BA00721335 /* UIBarButtonItem+Helpers.swift in Sources */,
 				554B1D5D1B30E5B400987933 /* GlobalStyles.swift in Sources */,
-				554B1D581B30DDDC00987933 /* Cardio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +428,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Relentless/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Relentless/Relentless-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -434,9 +441,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Relentless/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Relentless/Relentless-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -505,6 +514,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5571A4331B3B31880057F845 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5571A4341B3B31880057F845 /* Model.xcdatamodel */,
+			);
+			currentVersion = 5571A4341B3B31880057F845 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 55F722B81B2E631D00D17988 /* Project object */;
 }

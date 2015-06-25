@@ -9,8 +9,6 @@
 import UIKit
 
 class WhatDidYouDoTableViewController: UITableViewController {
-    
-    let activities = ActivityManager.allActivities()
     var activityEvent : ActivityEvent
     let REUSE_IDENTIFIER = "cell"
     
@@ -42,25 +40,29 @@ class WhatDidYouDoTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return activities.count
+        return ActivityEvent.defaultActivities().count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let activity = activities[indexPath.row]
+        let activityName = ActivityEvent.defaultActivities()[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier(REUSE_IDENTIFIER) as! ActivityCell
-        cell.activityNameLabel.text = activity.name
+        cell.activityNameLabel.text = activityName
         
-        activityEvent.has(activity) ? configureSelectedCell(cell) : configureUnselectedCell(cell)
+        if activityEvent.has(activityName) {
+            configureSelectedCell(cell)
+        } else {
+            configureUnselectedCell(cell)
+        }
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let activity = activities[indexPath.row]
+        let activityName = ActivityEvent.defaultActivities()[indexPath.row]
         
-        if activityEvent.has(activity) {
-            activityEvent.remove(activity)
+        if activityEvent.has(activityName) {
+            activityEvent.removeActivity(activityName)
         } else {
-            activityEvent.add(activity)
+            activityEvent.addActivity(activityName, isEnergyConsumer: true)
         }
 
         tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
@@ -79,7 +81,7 @@ class WhatDidYouDoTableViewController: UITableViewController {
     }
     
     func cancel() {
-        activityEvent.removeAllEnergyConsumers()
+        activityEvent.removeEnergyConsumers()
         dismissViewControllerAnimated(true, completion: nil)
     }
     

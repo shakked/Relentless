@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Activity" representedClassName="Relentless.Activity" syncable="YES">
+        <attribute name="energyConsumer" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activityEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActivityEvent" inverseName="activities" inverseEntity="ActivityEvent" syncable="YES"/>
+    </entity>
+    <entity name="ActivityEvent" representedClassName="Relentless.ActivityEvent" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="activities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="activityEvent" inverseEntity="Activity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="ActivityEvent" positionX="-54" positionY="18" width="128" height="75"/>
+    </elements>
+</model>

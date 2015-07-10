@@ -18,8 +18,7 @@
 		555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */; };
 		555237CA1B386BBC00721335 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237C81B386BBC00721335 /* HeaderView.swift */; };
 		555237CB1B386BBC00721335 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 555237C91B386BBC00721335 /* HeaderView.xib */; };
-		5571A4351B3B31880057F845 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4331B3B31880057F845 /* Model.xcdatamodeld */; };
-		5571A43B1B3B33DB0057F845 /* ActivityStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5571A43A1B3B33DB0057F845 /* ActivityStore.m */; };
+		5552F75B1B503FF30080F37F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5552F7591B503FF30080F37F /* Model.xcdatamodeld */; };
 		5571A4431B3B40980057F845 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4421B3B40980057F845 /* Activity.swift */; };
 		5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4441B3B40F70057F845 /* ActivityEvent.swift */; };
 		55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722C51B2E631D00D17988 /* AppDelegate.swift */; };
@@ -57,9 +56,7 @@
 		555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSSJournalParentViewController.swift; sourceTree = "<group>"; };
 		555237C81B386BBC00721335 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = Relentless/HeaderView.swift; sourceTree = "<group>"; };
 		555237C91B386BBC00721335 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = Relentless/HeaderView.xib; sourceTree = "<group>"; };
-		5571A4341B3B31880057F845 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		5571A4391B3B33DB0057F845 /* ActivityStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityStore.h; sourceTree = "<group>"; };
-		5571A43A1B3B33DB0057F845 /* ActivityStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityStore.m; sourceTree = "<group>"; };
+		5552F75A1B503FF30080F37F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5571A4421B3B40980057F845 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5571A4441B3B40F70057F845 /* ActivityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
 		55F722C01B2E631D00D17988 /* Relentless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relentless.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,11 +95,9 @@
 		554B1D521B30DDA600987933 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5552F7591B503FF30080F37F /* Model.xcdatamodeld */,
 				5571A4441B3B40F70057F845 /* ActivityEvent.swift */,
 				5571A4421B3B40980057F845 /* Activity.swift */,
-				5571A4391B3B33DB0057F845 /* ActivityStore.h */,
-				5571A43A1B3B33DB0057F845 /* ActivityStore.m */,
-				5571A4331B3B31880057F845 /* Model.xcdatamodeld */,
 				554B1D501B30DDA000987933 /* ActivityManager.swift */,
 				554B1D591B30E15600987933 /* Playground.playground */,
 			);
@@ -298,11 +293,10 @@
 				55F722E71B2E635400D17988 /* HomeViewController.swift in Sources */,
 				5571A4431B3B40980057F845 /* Activity.swift in Sources */,
 				554B1D5B1B30E55700987933 /* UIColor+Hex.swift in Sources */,
-				5571A4351B3B31880057F845 /* Model.xcdatamodeld in Sources */,
+				5552F75B1B503FF30080F37F /* Model.xcdatamodeld in Sources */,
 				555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */,
 				554B1D4E1B30DBDF00987933 /* ActivityCell.swift in Sources */,
 				55F722F11B2E68B800D17988 /* WorkOutType.swift in Sources */,
-				5571A43B1B3B33DB0057F845 /* ActivityStore.m in Sources */,
 				5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */,
 				555237BB1B3706BA00721335 /* UINavigationController+EasyNavBar.swift in Sources */,
 				555237CA1B386BBC00721335 /* HeaderView.swift in Sources */,
@@ -516,12 +510,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5571A4331B3B31880057F845 /* Model.xcdatamodeld */ = {
+		5552F7591B503FF30080F37F /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5571A4341B3B31880057F845 /* Model.xcdatamodel */,
+				5552F75A1B503FF30080F37F /* Model.xcdatamodel */,
 			);
-			currentVersion = 5571A4341B3B31880057F845 /* Model.xcdatamodel */;
+			currentVersion = 5552F75A1B503FF30080F37F /* Model.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

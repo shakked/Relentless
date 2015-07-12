@@ -29,34 +29,45 @@ import UIKit
 
 class ActivityManager: NSObject {
     
-//    init(date: NSDate) {
-//        
-//    }
-//    
-//    class func allActivities() -> [Activity] {
-//        return ActivityStore.sharedStore().allActivities() as! [Activity]
-//    }
-//    
-//    class func activitiesForDate(date: NSDate) -> [Activity] {
-//        let calendar = NSCalendar.currentCalendar()
-//        var activities : [Activity] = []
-//        for activity in allActivities() {
-//            if calendar.isDate(activity.date, inSameDayAsDate: date) {
-//                activities.append(activity)
-//            }
-//        }
-//        return activities
-//    }
-//    
-//    class func hasEnergyConsumer(activities: [Activity]) -> Bool {
-//        for activity in activities {
-//            if activity.type.integerValue == ExerciseType.EnergyConsumer.rawValue {
-//                return true
-//            }
-//        }
-//        return false
-//    }
-//    
+    static let sharedManager = ActivityManager()
+    
+    func activityEvent(date: NSDate, completion: (ActivityEvent) -> (Void)) {
+        let midnights = date.midnights()
+        let query = PFQuery(className: Constants.Classes.ActivityEvent)
+        query.whereKey(Constants.Parameters.date, greaterThanOrEqualTo: midnights.dayOf)
+        query.whereKey(Constants.Parameters.date, lessThan: midnights.nextDay)
+        query.whereKey(Constants.Parameters.user, equalTo: PFUser.currentUser()!)
+        query.includeKey(Constants.Parameters.activities)
+        query.includeKey(Constants.Parameters.type)
+        query.getFirstObjectInBackgroundWithBlock { (activityEventObject: PFObject?, error: NSError?) -> Void in
+            let activityEventObject = activityEventObject ?? self.createActivityEventObject(date)
+            completion(ActivityEvent(object: activityEventObject))
+        }
+    }
+    
+    func createActivityEventObject(date: NSDate) -> PFObject {
+        let activityEventObject = PFObject(className: Constants.Classes.ActivityEvent)
+        activityEventObject.setValue(date, forKey: Constants.Parameters.date)
+        activityEventObject.setValue(PFUser.currentUser(), forKey: Constants.Parameters.user)
+        activityEventObject.saveEventually { _ in }
+        return activityEventObject
+    }
+    
+    func activityTypesThatConsumeEnergy(completion: (([ActivityType], Bool) -> Void)) {
+        let query = PFQuery(className: Constants.Classes.ActivityType)
+        query.whereKey(Constants.Parameters.isEnergyConsumer, equalTo: true)
+        query.findObjectsInBackgroundWithBlock { (activityTypeObjects, error) -> Void in
+            if error == nil {
+                let activityTypeObjects = activityTypeObjects as? [PFObject] ?? []
+                let activityTypes = ActivityType.parse(activityTypeObjects)
+                completion(activityTypes, true)
+            } else {
+                completion([], false)
+            }
+        }
+    }
+    
+//
 //    class func hasNonEnergyConsumer(activities: [Activity]) -> Bool {
 //        for activity in activities {
 //            if activity.type.integerValue == ExerciseType.NonEnergyConsumer.rawValue {

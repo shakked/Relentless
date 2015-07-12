@@ -10,6 +10,13 @@ import UIKit
 
 class ActivityCell: UITableViewCell {
     
+    @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var activityNameLabel: UILabel!
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        iconImageView.image = nil
+    }
+    
 }
+

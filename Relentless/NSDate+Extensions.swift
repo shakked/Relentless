@@ -15,4 +15,11 @@ extension NSDate {
         formatter.dateStyle = .MediumStyle
         return formatter.stringFromDate(self)
     }
+    
+    func midnights() -> (dayOf: NSDate, nextDay: NSDate) {
+        let calendar = NSCalendar.currentCalendar()
+        let midnightOnDate = calendar.startOfDayForDate(self)
+        let midnightDayAfter = calendar.dateByAddingUnit(NSCalendarUnit.CalendarUnitDay, value: 1, toDate: midnightOnDate, options: nil)!
+        return (dayOf: midnightOnDate, nextDay: midnightDayAfter)
+    }
 }

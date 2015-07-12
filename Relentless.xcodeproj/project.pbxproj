@@ -15,14 +15,23 @@
 		554B1D5D1B30E5B400987933 /* GlobalStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B1D5C1B30E5B400987933 /* GlobalStyles.swift */; };
 		555237BA1B3706BA00721335 /* UIBarButtonItem+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237B81B3706BA00721335 /* UIBarButtonItem+Helpers.swift */; };
 		555237BB1B3706BA00721335 /* UINavigationController+EasyNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237B91B3706BA00721335 /* UINavigationController+EasyNavBar.swift */; };
-		555237BF1B38024400721335 /* NSDate+EasyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237BE1B38024400721335 /* NSDate+EasyString.swift */; };
+		555237BF1B38024400721335 /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237BE1B38024400721335 /* NSDate+Extensions.swift */; };
 		555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */; };
 		555237CA1B386BBC00721335 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237C81B386BBC00721335 /* HeaderView.swift */; };
 		555237CB1B386BBC00721335 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 555237C91B386BBC00721335 /* HeaderView.xib */; };
 		5552F75B1B503FF30080F37F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5552F7591B503FF30080F37F /* Model.xcdatamodeld */; };
 		5552F75D1B5041BB0080F37F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5552F75C1B5041BB0080F37F /* Podfile */; };
+		5552F75F1B5043AD0080F37F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552F75E1B5043AD0080F37F /* LoginManager.swift */; };
+		5552F7631B50466B0080F37F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552F7611B50466B0080F37F /* SignUpViewController.swift */; };
+		5552F7641B50466B0080F37F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5552F7621B50466B0080F37F /* SignUpViewController.xib */; };
+		556F22031B52C2100093AE9B /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22021B52C2100093AE9B /* Array+Extension.swift */; };
+		556F22051B52C2800093AE9B /* PFObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22041B52C2800093AE9B /* PFObject+Extension.swift */; };
 		5571A4431B3B40980057F845 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4421B3B40980057F845 /* Activity.swift */; };
 		5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4441B3B40F70057F845 /* ActivityEvent.swift */; };
+		5599684D1B51D955002C6A2B /* CALayer+XIBConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */; };
+		5599684F1B51EBA2002C6A2B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5599684E1B51EBA2002C6A2B /* Constants.swift */; };
+		559968511B520E25002C6A2B /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559968501B520E25002C6A2B /* ActivityType.swift */; };
+		559968531B52128A002C6A2B /* ParseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559968521B52128A002C6A2B /* ParseWrapper.swift */; };
 		55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722C51B2E631D00D17988 /* AppDelegate.swift */; };
 		55F722C81B2E631D00D17988 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722C71B2E631D00D17988 /* ViewController.swift */; };
 		55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F722CC1B2E631D00D17988 /* Images.xcassets */; };
@@ -55,14 +64,23 @@
 		554BD5A11B399DF500787DD9 /* Relentless-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Relentless-Bridging-Header.h"; sourceTree = "<group>"; };
 		555237B81B3706BA00721335 /* UIBarButtonItem+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Helpers.swift"; sourceTree = "<group>"; };
 		555237B91B3706BA00721335 /* UINavigationController+EasyNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+EasyNavBar.swift"; sourceTree = "<group>"; };
-		555237BE1B38024400721335 /* NSDate+EasyString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+EasyString.swift"; sourceTree = "<group>"; };
+		555237BE1B38024400721335 /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
 		555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSSJournalParentViewController.swift; sourceTree = "<group>"; };
 		555237C81B386BBC00721335 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = Relentless/HeaderView.swift; sourceTree = "<group>"; };
 		555237C91B386BBC00721335 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = Relentless/HeaderView.xib; sourceTree = "<group>"; };
 		5552F75A1B503FF30080F37F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		5552F75C1B5041BB0080F37F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5552F75C1B5041BB0080F37F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5552F75E1B5043AD0080F37F /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		5552F7611B50466B0080F37F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5552F7621B50466B0080F37F /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		556F22021B52C2100093AE9B /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		556F22041B52C2800093AE9B /* PFObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PFObject+Extension.swift"; sourceTree = "<group>"; };
 		5571A4421B3B40980057F845 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5571A4441B3B40F70057F845 /* ActivityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
+		5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XIBConfiguration.swift"; sourceTree = "<group>"; };
+		5599684E1B51EBA2002C6A2B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		559968501B520E25002C6A2B /* ActivityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
+		559968521B52128A002C6A2B /* ParseWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseWrapper.swift; sourceTree = "<group>"; };
 		55F722C01B2E631D00D17988 /* Relentless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relentless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F722C41B2E631D00D17988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55F722C51B2E631D00D17988 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,12 +126,22 @@
 			isa = PBXGroup;
 			children = (
 				5552F7591B503FF30080F37F /* Model.xcdatamodeld */,
+				559968521B52128A002C6A2B /* ParseWrapper.swift */,
 				5571A4441B3B40F70057F845 /* ActivityEvent.swift */,
+				559968501B520E25002C6A2B /* ActivityType.swift */,
 				5571A4421B3B40980057F845 /* Activity.swift */,
 				554B1D501B30DDA000987933 /* ActivityManager.swift */,
 				554B1D591B30E15600987933 /* Playground.playground */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		5552F7601B5046490080F37F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5552F75E1B5043AD0080F37F /* LoginManager.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		55F722B71B2E631D00D17988 = {
@@ -143,7 +171,10 @@
 			isa = PBXGroup;
 			children = (
 				55F722C51B2E631D00D17988 /* AppDelegate.swift */,
+				5552F7601B5046490080F37F /* Networking */,
 				555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */,
+				5552F7611B50466B0080F37F /* SignUpViewController.swift */,
+				5552F7621B50466B0080F37F /* SignUpViewController.xib */,
 				55F722E51B2E635400D17988 /* HomeViewController.swift */,
 				55F722E61B2E635400D17988 /* HomeViewController.xib */,
 				55F722EE1B2E684200D17988 /* WhatDidYouDoTableViewController.swift */,
@@ -164,10 +195,14 @@
 		55F722C31B2E631D00D17988 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5599684E1B51EBA2002C6A2B /* Constants.swift */,
+				5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */,
+				556F22021B52C2100093AE9B /* Array+Extension.swift */,
+				556F22041B52C2800093AE9B /* PFObject+Extension.swift */,
 				555237B81B3706BA00721335 /* UIBarButtonItem+Helpers.swift */,
 				555237B91B3706BA00721335 /* UINavigationController+EasyNavBar.swift */,
 				554B1D5C1B30E5B400987933 /* GlobalStyles.swift */,
-				555237BE1B38024400721335 /* NSDate+EasyString.swift */,
+				555237BE1B38024400721335 /* NSDate+Extensions.swift */,
 				554B1D5A1B30E55700987933 /* UIColor+Hex.swift */,
 				55F722C41B2E631D00D17988 /* Info.plist */,
 			);
@@ -304,6 +339,7 @@
 			files = (
 				5552F75D1B5041BB0080F37F /* Podfile in Resources */,
 				55F722D01B2E631D00D17988 /* LaunchScreen.xib in Resources */,
+				5552F7641B50466B0080F37F /* SignUpViewController.xib in Resources */,
 				55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */,
 				555237CB1B386BBC00721335 /* HeaderView.xib in Resources */,
 				554B1D4F1B30DBDF00987933 /* ActivityCell.xib in Resources */,
@@ -392,19 +428,27 @@
 				55F722C81B2E631D00D17988 /* ViewController.swift in Sources */,
 				55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */,
 				554B1D511B30DDA000987933 /* ActivityManager.swift in Sources */,
-				555237BF1B38024400721335 /* NSDate+EasyString.swift in Sources */,
+				555237BF1B38024400721335 /* NSDate+Extensions.swift in Sources */,
+				5552F75F1B5043AD0080F37F /* LoginManager.swift in Sources */,
 				55F722E71B2E635400D17988 /* HomeViewController.swift in Sources */,
+				5552F7631B50466B0080F37F /* SignUpViewController.swift in Sources */,
+				559968511B520E25002C6A2B /* ActivityType.swift in Sources */,
 				5571A4431B3B40980057F845 /* Activity.swift in Sources */,
+				556F22051B52C2800093AE9B /* PFObject+Extension.swift in Sources */,
 				554B1D5B1B30E55700987933 /* UIColor+Hex.swift in Sources */,
 				5552F75B1B503FF30080F37F /* Model.xcdatamodeld in Sources */,
+				5599684F1B51EBA2002C6A2B /* Constants.swift in Sources */,
 				555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */,
 				554B1D4E1B30DBDF00987933 /* ActivityCell.swift in Sources */,
+				556F22031B52C2100093AE9B /* Array+Extension.swift in Sources */,
 				55F722F11B2E68B800D17988 /* WorkOutType.swift in Sources */,
 				5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */,
 				555237BB1B3706BA00721335 /* UINavigationController+EasyNavBar.swift in Sources */,
+				5599684D1B51D955002C6A2B /* CALayer+XIBConfiguration.swift in Sources */,
 				555237CA1B386BBC00721335 /* HeaderView.swift in Sources */,
 				555237BA1B3706BA00721335 /* UIBarButtonItem+Helpers.swift in Sources */,
 				554B1D5D1B30E5B400987933 /* GlobalStyles.swift in Sources */,
+				559968531B52128A002C6A2B /* ParseWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

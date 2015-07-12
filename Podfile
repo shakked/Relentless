@@ -7,7 +7,10 @@ pod 'FlurrySDK', '~>6.5'
 pod 'Fabric', '~> 1.3.0' # required
 pod 'Fabric/Crashlytics', '~> 1.3.0'
 pod 'Parse'
-
+pod 'ParseFacebookUtils'
+pod 'SDWebImage'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
 end
 
 target 'RelentlessTests' do

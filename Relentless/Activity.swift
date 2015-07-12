@@ -10,11 +10,23 @@ import Foundation
 import CoreData
 
 
-class Activity: NSManagedObject {
-
-    @NSManaged var energyConsumer: NSNumber
-    @NSManaged var name: String
-    @NSManaged var activityEvent: NSManagedObject
+class Activity: NSObject, ParseWrapper {
+    let name : String
+    let type : ActivityType
+    let object : PFObject
     
-
+    required init(object: PFObject) {
+        name = object.valueForKey(Constants.Parameters.name) as? String ?? ""
+        type = ActivityType(object: object[Constants.Parameters.type] as! PFObject)
+        self.object = object
+        super.init()
+    }
+    
+    class func parse(objects: [PFObject]) -> [Activity] {
+        var activities : [Activity] = []
+        for object in objects {
+            activities.append(Activity(object: object))
+        }
+        return activities
+    }
 }

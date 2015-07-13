@@ -12,5 +12,4 @@ class StreakView: UIView {
 
     @IBOutlet weak var streakLabel: UILabel!
     @IBOutlet weak var encouragementLabel: UILabel!
-    
 }

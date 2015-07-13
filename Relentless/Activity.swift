@@ -18,7 +18,7 @@ class Activity: NSObject, ParseWrapper {
     
     required init(object: PFObject) {
         
-        name = object.valueForKey(Constants.Parameters.name) as? String ?? ""
+        name = object[Constants.Parameters.name] as? String ?? ""
         type = ActivityType(object: object[Constants.Parameters.type] as! PFObject)
         date = object[Constants.Parameters.date] as! NSDate
         self.object = object

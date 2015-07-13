@@ -19,7 +19,6 @@
 		555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */; };
 		555237CA1B386BBC00721335 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555237C81B386BBC00721335 /* HeaderView.swift */; };
 		555237CB1B386BBC00721335 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 555237C91B386BBC00721335 /* HeaderView.xib */; };
-		5552F75B1B503FF30080F37F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5552F7591B503FF30080F37F /* Model.xcdatamodeld */; };
 		5552F75D1B5041BB0080F37F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5552F75C1B5041BB0080F37F /* Podfile */; };
 		5552F75F1B5043AD0080F37F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552F75E1B5043AD0080F37F /* LoginManager.swift */; };
 		5552F7631B50466B0080F37F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552F7611B50466B0080F37F /* SignUpViewController.swift */; };
@@ -36,6 +35,7 @@
 		556F22181B531D650093AE9B /* DoneCancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22171B531D650093AE9B /* DoneCancelView.swift */; };
 		556F221A1B531D6E0093AE9B /* DoneCancelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556F22191B531D6E0093AE9B /* DoneCancelView.xib */; };
 		556F22231B53FB670093AE9B /* UIImage+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22221B53FB670093AE9B /* UIImage+Screenshot.swift */; };
+		556F22251B540C290093AE9B /* Weightlift-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 556F22241B540C290093AE9B /* Weightlift-100.png */; };
 		5571A4431B3B40980057F845 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4421B3B40980057F845 /* Activity.swift */; };
 		5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4441B3B40F70057F845 /* ActivityEvent.swift */; };
 		5599684D1B51D955002C6A2B /* CALayer+XIBConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */; };
@@ -49,8 +49,6 @@
 		55F722DC1B2E631D00D17988 /* RelentlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722DB1B2E631D00D17988 /* RelentlessTests.swift */; };
 		55F722E71B2E635400D17988 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722E51B2E635400D17988 /* HomeViewController.swift */; };
 		55F722E81B2E635400D17988 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F722E61B2E635400D17988 /* HomeViewController.xib */; };
-		55F722EF1B2E684200D17988 /* WhatDidYouDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722EE1B2E684200D17988 /* WhatDidYouDoTableViewController.swift */; };
-		55F722F11B2E68B800D17988 /* WorkOutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F722F01B2E68B800D17988 /* WorkOutType.swift */; };
 		A6DE9184028EE644F3318453 /* libPods-Relentless.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64925F39A29A0A8BF2EA7A8D /* libPods-Relentless.a */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +76,6 @@
 		555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSSJournalParentViewController.swift; sourceTree = "<group>"; };
 		555237C81B386BBC00721335 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = Relentless/HeaderView.swift; sourceTree = "<group>"; };
 		555237C91B386BBC00721335 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = Relentless/HeaderView.xib; sourceTree = "<group>"; };
-		5552F75A1B503FF30080F37F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5552F75C1B5041BB0080F37F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5552F75E1B5043AD0080F37F /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		5552F7611B50466B0080F37F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +92,7 @@
 		556F22171B531D650093AE9B /* DoneCancelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneCancelView.swift; sourceTree = "<group>"; };
 		556F22191B531D6E0093AE9B /* DoneCancelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoneCancelView.xib; sourceTree = "<group>"; };
 		556F22221B53FB670093AE9B /* UIImage+Screenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Screenshot.swift"; sourceTree = "<group>"; };
+		556F22241B540C290093AE9B /* Weightlift-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Weightlift-100.png"; path = "../../../Downloads/Weightlift-100.png"; sourceTree = "<group>"; };
 		5571A4421B3B40980057F845 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5571A4441B3B40F70057F845 /* ActivityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
 		5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XIBConfiguration.swift"; sourceTree = "<group>"; };
@@ -112,8 +110,6 @@
 		55F722DB1B2E631D00D17988 /* RelentlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelentlessTests.swift; sourceTree = "<group>"; };
 		55F722E51B2E635400D17988 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		55F722E61B2E635400D17988 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		55F722EE1B2E684200D17988 /* WhatDidYouDoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatDidYouDoTableViewController.swift; sourceTree = "<group>"; };
-		55F722F01B2E68B800D17988 /* WorkOutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOutType.swift; sourceTree = "<group>"; };
 		646AE31154EBACA328BB5079 /* Pods-Relentless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relentless.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Relentless/Pods-Relentless.debug.xcconfig"; sourceTree = "<group>"; };
 		64925F39A29A0A8BF2EA7A8D /* libPods-Relentless.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Relentless.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B53AA64FC7A68790E4FA938 /* libPods-RelentlessTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RelentlessTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,11 +141,7 @@
 		554B1D521B30DDA600987933 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5552F7591B503FF30080F37F /* Model.xcdatamodeld */,
-				559968521B52128A002C6A2B /* ParseWrapper.swift */,
-				5571A4441B3B40F70057F845 /* ActivityEvent.swift */,
-				559968501B520E25002C6A2B /* ActivityType.swift */,
-				5571A4421B3B40980057F845 /* Activity.swift */,
+				556F22281B540F610093AE9B /* Parse Wrappers */,
 				554B1D501B30DDA000987933 /* ActivityManager.swift */,
 				554B1D591B30E15600987933 /* Playground.playground */,
 			);
@@ -167,22 +159,53 @@
 		556F22081B52EB660093AE9B /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				556F22261B540EB60093AE9B /* Activities Table */,
+				556F22271B540EBD0093AE9B /* Activity Type Table */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		556F22261B540EB60093AE9B /* Activities Table */ = {
+			isa = PBXGroup;
+			children = (
 				556F22061B52EB4A0093AE9B /* FeedTableViewController.swift */,
+				554B1D4C1B30DBDF00987933 /* ActivityCell.swift */,
+				554B1D4D1B30DBDF00987933 /* ActivityCell.xib */,
+				556F22091B52EB720093AE9B /* StreakView.xib */,
+				556F220B1B52EE370093AE9B /* StreakView.swift */,
+			);
+			name = "Activities Table";
+			sourceTree = "<group>";
+		};
+		556F22271B540EBD0093AE9B /* Activity Type Table */ = {
+			isa = PBXGroup;
+			children = (
 				556F220F1B5304B30093AE9B /* ActivityTypeTableViewController.swift */,
 				556F22131B5305800093AE9B /* ActivityTypeCell.swift */,
 				556F22141B5305800093AE9B /* ActivityTypeCell.xib */,
-				556F22091B52EB720093AE9B /* StreakView.xib */,
-				556F220B1B52EE370093AE9B /* StreakView.swift */,
 				556F22171B531D650093AE9B /* DoneCancelView.swift */,
 				556F22191B531D6E0093AE9B /* DoneCancelView.xib */,
+				55F722E51B2E635400D17988 /* HomeViewController.swift */,
 			);
-			name = Feed;
+			name = "Activity Type Table";
+			sourceTree = "<group>";
+		};
+		556F22281B540F610093AE9B /* Parse Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				559968521B52128A002C6A2B /* ParseWrapper.swift */,
+				5571A4441B3B40F70057F845 /* ActivityEvent.swift */,
+				559968501B520E25002C6A2B /* ActivityType.swift */,
+				5571A4421B3B40980057F845 /* Activity.swift */,
+			);
+			name = "Parse Wrappers";
 			sourceTree = "<group>";
 		};
 		55F722B71B2E631D00D17988 = {
 			isa = PBXGroup;
 			children = (
 				556F220D1B52F2EC0093AE9B /* Bench Press With Dumbbells-100.png */,
+				556F22241B540C290093AE9B /* Weightlift-100.png */,
 				5552F75C1B5041BB0080F37F /* Podfile */,
 				555237C81B386BBC00721335 /* HeaderView.swift */,
 				555237C91B386BBC00721335 /* HeaderView.xib */,
@@ -211,14 +234,9 @@
 				555237C01B380F8300721335 /* ZSSJournalParentViewController.swift */,
 				5552F7611B50466B0080F37F /* SignUpViewController.swift */,
 				5552F7621B50466B0080F37F /* SignUpViewController.xib */,
-				55F722E51B2E635400D17988 /* HomeViewController.swift */,
 				556F22081B52EB660093AE9B /* Feed */,
 				55F722E61B2E635400D17988 /* HomeViewController.xib */,
-				55F722EE1B2E684200D17988 /* WhatDidYouDoTableViewController.swift */,
-				554B1D4C1B30DBDF00987933 /* ActivityCell.swift */,
-				554B1D4D1B30DBDF00987933 /* ActivityCell.xib */,
 				554B1D521B30DDA600987933 /* Model */,
-				55F722F01B2E68B800D17988 /* WorkOutType.swift */,
 				55F722ED1B2E64B000D17988 /* On Boarding */,
 				55F722C71B2E631D00D17988 /* ViewController.swift */,
 				55F722CC1B2E631D00D17988 /* Images.xcassets */,
@@ -377,6 +395,7 @@
 			files = (
 				5552F75D1B5041BB0080F37F /* Podfile in Resources */,
 				55F722D01B2E631D00D17988 /* LaunchScreen.xib in Resources */,
+				556F22251B540C290093AE9B /* Weightlift-100.png in Resources */,
 				5552F7641B50466B0080F37F /* SignUpViewController.xib in Resources */,
 				55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */,
 				556F220A1B52EB720093AE9B /* StreakView.xib in Resources */,
@@ -466,7 +485,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F722EF1B2E684200D17988 /* WhatDidYouDoTableViewController.swift in Sources */,
 				55F722C81B2E631D00D17988 /* ViewController.swift in Sources */,
 				55F722C61B2E631D00D17988 /* AppDelegate.swift in Sources */,
 				554B1D511B30DDA000987933 /* ActivityManager.swift in Sources */,
@@ -480,14 +498,12 @@
 				5571A4431B3B40980057F845 /* Activity.swift in Sources */,
 				556F22051B52C2800093AE9B /* PFObject+Extension.swift in Sources */,
 				554B1D5B1B30E55700987933 /* UIColor+Hex.swift in Sources */,
-				5552F75B1B503FF30080F37F /* Model.xcdatamodeld in Sources */,
 				5599684F1B51EBA2002C6A2B /* Constants.swift in Sources */,
 				556F22111B5304B30093AE9B /* ActivityTypeTableViewController.swift in Sources */,
 				555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */,
 				556F22071B52EB4A0093AE9B /* FeedTableViewController.swift in Sources */,
 				554B1D4E1B30DBDF00987933 /* ActivityCell.swift in Sources */,
 				556F22031B52C2100093AE9B /* Array+Extension.swift in Sources */,
-				55F722F11B2E68B800D17988 /* WorkOutType.swift in Sources */,
 				556F22151B5305800093AE9B /* ActivityTypeCell.swift in Sources */,
 				5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */,
 				555237BB1B3706BA00721335 /* UINavigationController+EasyNavBar.swift in Sources */,
@@ -707,19 +723,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5552F7591B503FF30080F37F /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5552F75A1B503FF30080F37F /* Model.xcdatamodel */,
-			);
-			currentVersion = 5552F75A1B503FF30080F37F /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 55F722B81B2E631D00D17988 /* Project object */;
 }

@@ -38,10 +38,12 @@ class ActivityManager: NSObject {
         query.whereKey(Constants.Parameters.date, lessThan: midnights.nextDay)
         query.whereKey(Constants.Parameters.user, equalTo: PFUser.currentUser()!)
         query.includeKey(Constants.Parameters.activities)
-        query.includeKey(Constants.Parameters.type)
+        query.includeKey("\(Constants.Parameters.activities).type")
         query.getFirstObjectInBackgroundWithBlock { (activityEventObject: PFObject?, error: NSError?) -> Void in
+            println(activityEventObject)
             let activityEventObject = activityEventObject ?? self.createActivityEventObject(date)
-            completion(ActivityEvent(object: activityEventObject))
+            let activityEvent = ActivityEvent(object: activityEventObject)
+            completion(activityEvent)
         }
     }
     

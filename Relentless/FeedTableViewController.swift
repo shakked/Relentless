@@ -92,6 +92,7 @@ class FeedTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         streakView = NSBundle.mainBundle().loadNibNamed(Constants.Views.StreakView, owner: self, options: nil)[0] as? StreakView
         streakView?.streakLabel.text = "\(streak)"
+        println("test")
         return streakView
     }
     

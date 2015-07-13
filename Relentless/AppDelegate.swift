@@ -1,3 +1,5 @@
+
+
 //
 //  AppDelegate.swift
 //  Relentless
@@ -27,12 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKProfile.enableUpdatesOnAccessTokenChange(true)
         
         if PFUser.currentUser() != nil {
-            self.window?.rootViewController = UINavigationController(rootViewController: HomeViewController(date: NSDate()))
+            self.window?.rootViewController = UINavigationController(rootViewController: FeedTableViewController())
         } else {
             self.window?.rootViewController = UINavigationController(rootViewController: SignUpViewController())
         }
 
-        
         return true
     }
     

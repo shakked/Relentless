@@ -9,8 +9,9 @@
 import UIKit
 
 extension UINavigationController {
-    func configureNavBar(barTintColor: UIColor, textColor: UIColor, font: UIFont = UIFont(name: "HelveticaNeue-Light", size: 18.0)!) {
+    func configureNavBar(barTintColor: UIColor, textColor: UIColor, font: UIFont = UIFont(name: "Avenir-Light", size: 18.0)!, barStyle: UIBarStyle = .Black) {
         navigationBar.barTintColor = barTintColor
+        navigationBar.barStyle = barStyle
         navigationBar.tintColor = textColor
         navigationBar.translucent = false
         navigationBar.titleTextAttributes = [NSFontAttributeName : font, NSForegroundColorAttributeName : textColor]

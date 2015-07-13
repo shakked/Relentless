@@ -13,19 +13,24 @@ import CoreData
 class Activity: NSObject, ParseWrapper {
     let name : String
     let type : ActivityType
+    let date : NSDate
     let object : PFObject
     
     required init(object: PFObject) {
+        
         name = object.valueForKey(Constants.Parameters.name) as? String ?? ""
         type = ActivityType(object: object[Constants.Parameters.type] as! PFObject)
+        date = object[Constants.Parameters.date] as! NSDate
         self.object = object
         super.init()
     }
     
     class func parse(objects: [PFObject]) -> [Activity] {
+
         var activities : [Activity] = []
         for object in objects {
-            activities.append(Activity(object: object))
+            let activity = Activity(object: object)
+            activities.append(activity)
         }
         return activities
     }

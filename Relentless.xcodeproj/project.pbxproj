@@ -26,6 +26,15 @@
 		5552F7641B50466B0080F37F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5552F7621B50466B0080F37F /* SignUpViewController.xib */; };
 		556F22031B52C2100093AE9B /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22021B52C2100093AE9B /* Array+Extension.swift */; };
 		556F22051B52C2800093AE9B /* PFObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22041B52C2800093AE9B /* PFObject+Extension.swift */; };
+		556F22071B52EB4A0093AE9B /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22061B52EB4A0093AE9B /* FeedTableViewController.swift */; };
+		556F220A1B52EB720093AE9B /* StreakView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556F22091B52EB720093AE9B /* StreakView.xib */; };
+		556F220C1B52EE370093AE9B /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F220B1B52EE370093AE9B /* StreakView.swift */; };
+		556F220E1B52F2EC0093AE9B /* Bench Press With Dumbbells-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 556F220D1B52F2EC0093AE9B /* Bench Press With Dumbbells-100.png */; };
+		556F22111B5304B30093AE9B /* ActivityTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F220F1B5304B30093AE9B /* ActivityTypeTableViewController.swift */; };
+		556F22151B5305800093AE9B /* ActivityTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22131B5305800093AE9B /* ActivityTypeCell.swift */; };
+		556F22161B5305800093AE9B /* ActivityTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556F22141B5305800093AE9B /* ActivityTypeCell.xib */; };
+		556F22181B531D650093AE9B /* DoneCancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22171B531D650093AE9B /* DoneCancelView.swift */; };
+		556F221A1B531D6E0093AE9B /* DoneCancelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556F22191B531D6E0093AE9B /* DoneCancelView.xib */; };
 		5571A4431B3B40980057F845 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4421B3B40980057F845 /* Activity.swift */; };
 		5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4441B3B40F70057F845 /* ActivityEvent.swift */; };
 		5599684D1B51D955002C6A2B /* CALayer+XIBConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */; };
@@ -75,6 +84,15 @@
 		5552F7621B50466B0080F37F /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		556F22021B52C2100093AE9B /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		556F22041B52C2800093AE9B /* PFObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PFObject+Extension.swift"; sourceTree = "<group>"; };
+		556F22061B52EB4A0093AE9B /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		556F22091B52EB720093AE9B /* StreakView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StreakView.xib; sourceTree = "<group>"; };
+		556F220B1B52EE370093AE9B /* StreakView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
+		556F220D1B52F2EC0093AE9B /* Bench Press With Dumbbells-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bench Press With Dumbbells-100.png"; path = "../../../Downloads/Bench Press With Dumbbells-100.png"; sourceTree = "<group>"; };
+		556F220F1B5304B30093AE9B /* ActivityTypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTypeTableViewController.swift; sourceTree = "<group>"; };
+		556F22131B5305800093AE9B /* ActivityTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTypeCell.swift; sourceTree = "<group>"; };
+		556F22141B5305800093AE9B /* ActivityTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTypeCell.xib; sourceTree = "<group>"; };
+		556F22171B531D650093AE9B /* DoneCancelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneCancelView.swift; sourceTree = "<group>"; };
+		556F22191B531D6E0093AE9B /* DoneCancelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoneCancelView.xib; sourceTree = "<group>"; };
 		5571A4421B3B40980057F845 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5571A4441B3B40F70057F845 /* ActivityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
 		5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XIBConfiguration.swift"; sourceTree = "<group>"; };
@@ -144,9 +162,25 @@
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		556F22081B52EB660093AE9B /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				556F22061B52EB4A0093AE9B /* FeedTableViewController.swift */,
+				556F220F1B5304B30093AE9B /* ActivityTypeTableViewController.swift */,
+				556F22131B5305800093AE9B /* ActivityTypeCell.swift */,
+				556F22141B5305800093AE9B /* ActivityTypeCell.xib */,
+				556F22091B52EB720093AE9B /* StreakView.xib */,
+				556F220B1B52EE370093AE9B /* StreakView.swift */,
+				556F22171B531D650093AE9B /* DoneCancelView.swift */,
+				556F22191B531D6E0093AE9B /* DoneCancelView.xib */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
 		55F722B71B2E631D00D17988 = {
 			isa = PBXGroup;
 			children = (
+				556F220D1B52F2EC0093AE9B /* Bench Press With Dumbbells-100.png */,
 				5552F75C1B5041BB0080F37F /* Podfile */,
 				555237C81B386BBC00721335 /* HeaderView.swift */,
 				555237C91B386BBC00721335 /* HeaderView.xib */,
@@ -176,6 +210,7 @@
 				5552F7611B50466B0080F37F /* SignUpViewController.swift */,
 				5552F7621B50466B0080F37F /* SignUpViewController.xib */,
 				55F722E51B2E635400D17988 /* HomeViewController.swift */,
+				556F22081B52EB660093AE9B /* Feed */,
 				55F722E61B2E635400D17988 /* HomeViewController.xib */,
 				55F722EE1B2E684200D17988 /* WhatDidYouDoTableViewController.swift */,
 				554B1D4C1B30DBDF00987933 /* ActivityCell.swift */,
@@ -341,8 +376,12 @@
 				55F722D01B2E631D00D17988 /* LaunchScreen.xib in Resources */,
 				5552F7641B50466B0080F37F /* SignUpViewController.xib in Resources */,
 				55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */,
+				556F220A1B52EB720093AE9B /* StreakView.xib in Resources */,
 				555237CB1B386BBC00721335 /* HeaderView.xib in Resources */,
+				556F220E1B52F2EC0093AE9B /* Bench Press With Dumbbells-100.png in Resources */,
 				554B1D4F1B30DBDF00987933 /* ActivityCell.xib in Resources */,
+				556F221A1B531D6E0093AE9B /* DoneCancelView.xib in Resources */,
+				556F22161B5305800093AE9B /* ActivityTypeCell.xib in Resources */,
 				55F722E81B2E635400D17988 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,18 +471,23 @@
 				5552F75F1B5043AD0080F37F /* LoginManager.swift in Sources */,
 				55F722E71B2E635400D17988 /* HomeViewController.swift in Sources */,
 				5552F7631B50466B0080F37F /* SignUpViewController.swift in Sources */,
+				556F22181B531D650093AE9B /* DoneCancelView.swift in Sources */,
 				559968511B520E25002C6A2B /* ActivityType.swift in Sources */,
 				5571A4431B3B40980057F845 /* Activity.swift in Sources */,
 				556F22051B52C2800093AE9B /* PFObject+Extension.swift in Sources */,
 				554B1D5B1B30E55700987933 /* UIColor+Hex.swift in Sources */,
 				5552F75B1B503FF30080F37F /* Model.xcdatamodeld in Sources */,
 				5599684F1B51EBA2002C6A2B /* Constants.swift in Sources */,
+				556F22111B5304B30093AE9B /* ActivityTypeTableViewController.swift in Sources */,
 				555237C11B380F8300721335 /* ZSSJournalParentViewController.swift in Sources */,
+				556F22071B52EB4A0093AE9B /* FeedTableViewController.swift in Sources */,
 				554B1D4E1B30DBDF00987933 /* ActivityCell.swift in Sources */,
 				556F22031B52C2100093AE9B /* Array+Extension.swift in Sources */,
 				55F722F11B2E68B800D17988 /* WorkOutType.swift in Sources */,
+				556F22151B5305800093AE9B /* ActivityTypeCell.swift in Sources */,
 				5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */,
 				555237BB1B3706BA00721335 /* UINavigationController+EasyNavBar.swift in Sources */,
+				556F220C1B52EE370093AE9B /* StreakView.swift in Sources */,
 				5599684D1B51D955002C6A2B /* CALayer+XIBConfiguration.swift in Sources */,
 				555237CA1B386BBC00721335 /* HeaderView.swift in Sources */,
 				555237BA1B3706BA00721335 /* UIBarButtonItem+Helpers.swift in Sources */,

@@ -18,7 +18,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onProfileUpdated:", name:FBSDKProfileDidChangeNotification, object: nil)
         // Do any additional setup after loading the view.
     }
     
@@ -35,21 +35,27 @@ class SignUpViewController: UIViewController {
         loadingAnimator.startAnimating()
         LoginManager.sharedManager.logInWithFacebook { (succeeded) -> (Void) in
             if succeeded {
-                LoginManager.sharedManager.loginAndLinkFBAccessTokenWithParse({ (succeeded) -> (Void) in
-                    if succeeded {
-                        LoginManager.sharedManager.configureUser({ (succeeded) -> (Void) in
-                            println("Succeeded:\(succeeded)")
-                        })
-                        
-                    } else {
-                        println("Could not link Parse to Facebook")
-                    }
-                })
+                println("Succeeded.")
+                println(FBSDKProfile.currentProfile())
+    
             } else {
                 println("Could not log in the user through facebook.")
             }
         }
         
+    }
+    
+    func onProfileUpdated(notification: NSNotification) {
+        LoginManager.sharedManager.loginAndLinkFBAccessTokenWithParse({ (succeeded) -> (Void) in
+            if succeeded {
+                LoginManager.sharedManager.configureUser({ (succeeded) -> (Void) in
+                    println("Succeeded:\(succeeded)")
+                })
+                
+            } else {
+                println("Could not link Parse to Facebook")
+            }
+        })
     }
     
     

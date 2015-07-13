@@ -10,6 +10,7 @@ import UIKit
 
 class ActivityType: NSObject, ParseWrapper {
     let name : String
+    let explanation : String
     let isEnergyConsumer : Bool
     let iconFile : PFFile
     let object : PFObject
@@ -17,7 +18,8 @@ class ActivityType: NSObject, ParseWrapper {
     private var parseCopyObject : PFObject?
     
     required init(object: PFObject) {
-        name = object.valueForKey(Constants.Parameters.name) as? String ?? ""
+        name = object[Constants.Parameters.name] as? String ?? ""
+        explanation = object[Constants.Parameters.explanation] as? String ?? ""
         isEnergyConsumer = (object[Constants.Parameters.isEnergyConsumer] as? NSNumber)?.boolValue ?? false
         iconFile = object[Constants.Parameters.icon] as! PFFile
         self.object = object
@@ -32,14 +34,17 @@ class ActivityType: NSObject, ParseWrapper {
         return activityTypes
     }
     
-    class func createActivities(activityTypes: [ActivityType], completion: (Bool, [Activity]) -> Void) {
+    class func createActivities(activityTypes: [ActivityType], activityEvent: ActivityEvent, completion: (Bool, [Activity]) -> Void) {
         var activityObjects : [PFObject ] = []
         for activityType in activityTypes {
             let activityObject = PFObject(className: Constants.Classes.Activity)
+            activityObject[Constants.Parameters.activityEvent] = activityEvent.object
             activityObject[Constants.Parameters.type] = activityType.object
             activityObject[Constants.Parameters.name] = "\(activityType.name) Activity"
+            activityObject[Constants.Parameters.date] = NSDate()
             activityObjects.append(activityObject)
         }
+        
         PFObject.saveAllInBackground(activityObjects, block: { (succeeded, _) -> Void in
             completion(succeeded, succeeded ? Activity.parse(activityObjects) : [])
         })

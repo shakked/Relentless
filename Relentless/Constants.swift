@@ -15,6 +15,16 @@ struct Constants {
         static let ActivityType = "ActivityType"
     }
     
+    struct Views {
+        static let StreakView = "StreakView"
+        static let DoneCancelView = "DoneCancelView"
+    }
+    
+    struct Cells {
+        static let ActivityCell = "ActivityCell"
+        static let ActivityTypeCell = "ActivityTypeCell"
+    }
+    
     struct Parameters {
         static let date = "date"
         static let user = "user"
@@ -24,6 +34,8 @@ struct Constants {
         static let isDefault = "isDefault"
         static let type = "type"
         static let icon = "icon"
+        static let activityEvent = "activityEvent"
+        static let explanation = "explanation"
     }
     
     struct ActivityType {

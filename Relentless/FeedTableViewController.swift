@@ -17,6 +17,13 @@ class FeedTableViewController: UITableViewController {
             tableView.reloadData()
         }
     }
+    
+    var streakView : StreakView?
+    var streak : Int = 0 {
+        didSet {
+            streakView?.streakLabel.text = "\(streak)"
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +35,9 @@ class FeedTableViewController: UITableViewController {
         ActivityManager.sharedManager.activityEvent(NSDate(), completion: { (activityEvent) -> (Void) in
             self.activityEvent = activityEvent
             self.refreshControl?.endRefreshing()
+        })
+        ActivityManager.sharedManager.calculateStreak({ (streak, succeeded) -> Void in
+            self.streak = streak
         })
     }
     
@@ -80,16 +90,25 @@ class FeedTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return NSBundle.mainBundle().loadNibNamed(Constants.Views.StreakView, owner: self, options: nil)[0] as! StreakView
+        streakView = NSBundle.mainBundle().loadNibNamed(Constants.Views.StreakView, owner: self, options: nil)[0] as? StreakView
+        streakView?.streakLabel.text = "\(streak)"
+        return streakView
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 76
+        return 72
     }
     
     
     func addActivities() {
+        let screenshot = UIImage.screenshot(navigationController!.view)
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        let effectView = UIVisualEffectView(effect: blurEffect)
+        effectView.frame = UIApplication.sharedApplication().keyWindow!.bounds
+        
         let attvc = ActivityTypeTableViewController(activityEvent: activityEvent)
+        attvc.tableView.backgroundView = effectView
+        
         attvc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
         attvc.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
         presentViewController(attvc, animated: true, completion: nil)

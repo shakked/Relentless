@@ -36,6 +36,7 @@
 		556F22181B531D650093AE9B /* DoneCancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22171B531D650093AE9B /* DoneCancelView.swift */; };
 		556F221A1B531D6E0093AE9B /* DoneCancelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556F22191B531D6E0093AE9B /* DoneCancelView.xib */; };
 		556F22231B53FB670093AE9B /* UIImage+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22221B53FB670093AE9B /* UIImage+Screenshot.swift */; };
+		556F22251B540C290093AE9B /* Weightlift-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 556F22241B540C290093AE9B /* Weightlift-100.png */; };
 		5571A4431B3B40980057F845 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4421B3B40980057F845 /* Activity.swift */; };
 		5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4441B3B40F70057F845 /* ActivityEvent.swift */; };
 		5599684D1B51D955002C6A2B /* CALayer+XIBConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */; };
@@ -95,6 +96,7 @@
 		556F22171B531D650093AE9B /* DoneCancelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneCancelView.swift; sourceTree = "<group>"; };
 		556F22191B531D6E0093AE9B /* DoneCancelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoneCancelView.xib; sourceTree = "<group>"; };
 		556F22221B53FB670093AE9B /* UIImage+Screenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Screenshot.swift"; sourceTree = "<group>"; };
+		556F22241B540C290093AE9B /* Weightlift-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Weightlift-100.png"; path = "../../../Downloads/Weightlift-100.png"; sourceTree = "<group>"; };
 		5571A4421B3B40980057F845 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5571A4441B3B40F70057F845 /* ActivityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
 		5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XIBConfiguration.swift"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				556F220D1B52F2EC0093AE9B /* Bench Press With Dumbbells-100.png */,
+				556F22241B540C290093AE9B /* Weightlift-100.png */,
 				5552F75C1B5041BB0080F37F /* Podfile */,
 				555237C81B386BBC00721335 /* HeaderView.swift */,
 				555237C91B386BBC00721335 /* HeaderView.xib */,
@@ -377,6 +380,7 @@
 			files = (
 				5552F75D1B5041BB0080F37F /* Podfile in Resources */,
 				55F722D01B2E631D00D17988 /* LaunchScreen.xib in Resources */,
+				556F22251B540C290093AE9B /* Weightlift-100.png in Resources */,
 				5552F7641B50466B0080F37F /* SignUpViewController.xib in Resources */,
 				55F722CD1B2E631D00D17988 /* Images.xcassets in Resources */,
 				556F220A1B52EB720093AE9B /* StreakView.xib in Resources */,

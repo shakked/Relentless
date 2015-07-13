@@ -46,11 +46,7 @@ class ActivityTypeTableViewController: UITableViewController, DoneCancelViewDele
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.translucent = true
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        let effectView = UIVisualEffectView(effect: blurEffect)
-        effectView.frame = UIApplication.sharedApplication().keyWindow!.bounds
-        tableView.addSubview(effectView)
-        tableView.sendSubviewToBack(effectView)
+
     }
     
     override func viewDidAppear(animated: Bool) {

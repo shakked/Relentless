@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKProfile.enableUpdatesOnAccessTokenChange(true)
         
         if PFUser.currentUser() != nil {
-            self.window?.rootViewController = UINavigationController(rootViewController: FeedTableViewController())
+            self.window?.rootViewController = UINavigationController(rootViewController: FeedTableViewController(style: UITableViewStyle.Grouped))
         } else {
             self.window?.rootViewController = UINavigationController(rootViewController: SignUpViewController())
         }

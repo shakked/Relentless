@@ -96,13 +96,19 @@ class FeedTableViewController: UITableViewController {
     //MARK:- Navigation
     
     func addActivities() {
-        let screenshot = UIImage.screenshot(navigationController!.view)
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        let effectView = UIVisualEffectView(effect: blurEffect)
-        effectView.frame = UIApplication.sharedApplication().keyWindow!.bounds
+//        let screenshot = UIImage.screenshot(navigationController!.view)
+//        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+//        let effectView = UIVisualEffectView(effect: blurEffect)
+//        effectView.backgroundColor = UIColor.redColor()
+//        effectView.frame = UIApplication.sharedApplication().keyWindow!.bounds
         let attvc = ActivityTypeTableViewController(activityEvent: activityEvent)
-        attvc.tableView.backgroundView = effectView
-        attvc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        let view = UIView(frame: UIApplication.sharedApplication().keyWindow!.bounds)
+        var gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [GlobalStyles.greenColor().CGColor, UIColor(rgba: "#99FFDB").CGColor]
+        view.layer.insertSublayer(gradient, atIndex: 0)
+        attvc.tableView.backgroundView = view
+        
         presentViewController(attvc, animated: true, completion: nil)
     }
 }

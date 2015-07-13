@@ -80,10 +80,6 @@ class HomeViewController: UIViewController {
     }
     
     func showWhatDidYouDoTable() {
-        let wdydtvc = WhatDidYouDoTableViewController(activityEvent: activityEvent)
-        let nav = UINavigationController(rootViewController: wdydtvc)
-        nav.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-        presentViewController(nav, animated: true, completion: nil)
     }
     
     func selectRestedButton() {

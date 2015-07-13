@@ -70,9 +70,7 @@ class LoginManager: NSObject {
         } else {
            completion(false)
         }
-        
     }
-    
     
     func configureFacebookLinkedUser(completion:((succeeded: Bool, error: NSError?) -> Void)) {
         let fbRequest = FBRequest.requestForMe()
@@ -90,34 +88,4 @@ class LoginManager: NSObject {
             })
         }
     }
-
-    
-    //TODO:- Implement Email Log In
-//    func signUpAndConfigureEmailLinkedUser(#userInfo: Dictionary<String, String>, completion:((succeeded: Bool, error: NSError?) -> Void)) {
-//        var user = PFUser()
-//        user.email = userInfo["email"]
-//        user.setValue(userInfo["firstName"], forKey: "firstName")
-//        user.setValue(userInfo["lastName"], forKey: "lastName")
-//        user.username = userInfo["username"]
-//        user.password = userInfo["password"]
-//        user.setValue("email", forKey: "authType")
-//        user.setValue(NSNumber(bool: true), forKey: "didFillOutUserInfoForm")
-//        
-//        user.signUpInBackgroundWithBlock { (succeeded: Bool, error: NSError?) -> Void in
-//            if succeeded {
-//
-//            }
-//            completion(succeeded: succeeded, error: error)
-//        }
-//    }
-//    
-//    func logInUser(username: String, password: String, completion:((succeeded: Bool, error: NSError?) -> Void)) {
-//        PFUser.logInWithUsernameInBackground(username, password: password) { (user, error) -> Void in
-//            if let user = user {
-//
-//                completion(succeeded: true, error: error)
-//            }
-//            completion(succeeded: false, error: error)
-//        }
-//    }
 }

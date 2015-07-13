@@ -1,3 +1,5 @@
+
+
 //
 //  ActivityManager.swift
 //  Relentless
@@ -15,14 +17,14 @@
 //    class func allActivities() -> [Activity] {
 //        return [Weights(), Cardio()]
 //    }
-//    
+//
 //    func activityEvent(date: NSDate) -> ActivityEvent {
 //        for activityEvent in activityEvents {
 //            //if event is today -> event
 //        }
 //        return ActivityEvent(date: date)
 //    }
-//    
+//
 //}
 
 import UIKit
@@ -47,7 +49,7 @@ class ActivityManager: NSObject {
         }
     }
     
-    func createActivityEventObject(date: NSDate) -> PFObject {
+    private func createActivityEventObject(date: NSDate) -> PFObject {
         let activityEventObject = PFObject(className: Constants.Classes.ActivityEvent)
         activityEventObject.setValue(date, forKey: Constants.Parameters.date)
         activityEventObject.setValue(PFUser.currentUser(), forKey: Constants.Parameters.user)
@@ -69,35 +71,33 @@ class ActivityManager: NSObject {
         }
     }
     
-//
-//    class func hasNonEnergyConsumer(activities: [Activity]) -> Bool {
-//        for activity in activities {
-//            if activity.type.integerValue == ExerciseType.NonEnergyConsumer.rawValue {
-//                return true
-//            }
-//        }
-//        return false
-//    }
-//    
-//    class func removeEnergyConsumers(activities: [Activity]) {
-//        for activity in activities {
-//            if activity.type.integerValue == ExerciseType.EnergyConsumer.rawValue {
-//                ActivityStore.sharedStore().deleteActivity(activity)
-//            }
-//        }
-//    }
-//    
-//    class func addRest(date: NSDate) {
-//        let restActivity = ActivityStore.sharedStore().createActivity()
-//        restActivity.date = date
-//        restActivity.name = "Rest"
-//        restActivity.type = NSNumber(integer: ExerciseType.NonEnergyConsumer.rawValue)
-//    }
-//    
-//    class func removeRest(date: NSDate) {
-//        
-//    }
-
+    
+    func calculateStreak(completion: ((Int, Bool) -> Void)) {
+        let query = PFQuery(className: Constants.Classes.ActivityEvent)
+        query.whereKey(Constants.Parameters.user, equalTo: PFUser.currentUser()!)
+        query.includeKey(Constants.Parameters.activities)
+        query.includeKey("\(Constants.Parameters.activities).type")
+        query.orderByDescending(Constants.Parameters.date)
+        query.findObjectsInBackgroundWithBlock { (activityEventObjects, error: NSError?) -> Void in
+            if error == nil {
+                let activityEventObjects = activityEventObjects as! [PFObject]
+                let activityEvents = ActivityEvent.parse(activityEventObjects)
+                var date = NSDate()
+                var streak : Int = 0
+                let calendar = NSCalendar.currentCalendar()
+                for activityEvent in activityEvents {
+                    if activityEvent.activities.count > 0 && calendar.isDate(date, inSameDayAsDate: activityEvent.date) {
+                        streak++
+                    }
+                    date = date.dateByAddingTimeInterval(-24*60*60)
+                }
+                completion(streak, true)
+            } else {
+                completion(0, false)
+            }
+        }
+    }
+    
 }
 
 enum ExerciseType: Int {

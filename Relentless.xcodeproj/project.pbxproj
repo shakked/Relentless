@@ -35,6 +35,7 @@
 		556F22161B5305800093AE9B /* ActivityTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556F22141B5305800093AE9B /* ActivityTypeCell.xib */; };
 		556F22181B531D650093AE9B /* DoneCancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22171B531D650093AE9B /* DoneCancelView.swift */; };
 		556F221A1B531D6E0093AE9B /* DoneCancelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556F22191B531D6E0093AE9B /* DoneCancelView.xib */; };
+		556F22231B53FB670093AE9B /* UIImage+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F22221B53FB670093AE9B /* UIImage+Screenshot.swift */; };
 		5571A4431B3B40980057F845 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4421B3B40980057F845 /* Activity.swift */; };
 		5571A4451B3B40F70057F845 /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A4441B3B40F70057F845 /* ActivityEvent.swift */; };
 		5599684D1B51D955002C6A2B /* CALayer+XIBConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */; };
@@ -93,6 +94,7 @@
 		556F22141B5305800093AE9B /* ActivityTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTypeCell.xib; sourceTree = "<group>"; };
 		556F22171B531D650093AE9B /* DoneCancelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneCancelView.swift; sourceTree = "<group>"; };
 		556F22191B531D6E0093AE9B /* DoneCancelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoneCancelView.xib; sourceTree = "<group>"; };
+		556F22221B53FB670093AE9B /* UIImage+Screenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Screenshot.swift"; sourceTree = "<group>"; };
 		5571A4421B3B40980057F845 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5571A4441B3B40F70057F845 /* ActivityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
 		5599684C1B51D955002C6A2B /* CALayer+XIBConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+XIBConfiguration.swift"; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				554B1D5C1B30E5B400987933 /* GlobalStyles.swift */,
 				555237BE1B38024400721335 /* NSDate+Extensions.swift */,
 				554B1D5A1B30E55700987933 /* UIColor+Hex.swift */,
+				556F22221B53FB670093AE9B /* UIImage+Screenshot.swift */,
 				55F722C41B2E631D00D17988 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -470,6 +473,7 @@
 				555237BF1B38024400721335 /* NSDate+Extensions.swift in Sources */,
 				5552F75F1B5043AD0080F37F /* LoginManager.swift in Sources */,
 				55F722E71B2E635400D17988 /* HomeViewController.swift in Sources */,
+				556F22231B53FB670093AE9B /* UIImage+Screenshot.swift in Sources */,
 				5552F7631B50466B0080F37F /* SignUpViewController.swift in Sources */,
 				556F22181B531D650093AE9B /* DoneCancelView.swift in Sources */,
 				559968511B520E25002C6A2B /* ActivityType.swift in Sources */,

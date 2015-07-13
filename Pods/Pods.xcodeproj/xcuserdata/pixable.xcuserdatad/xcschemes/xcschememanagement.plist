@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Relentless-AMSmoothAlert.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Relentless-Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,6 +30,11 @@
 			<false/>
 		</dict>
 		<key>Pods-Relentless-Facebook-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Relentless-GPUImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -62,57 +72,67 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>39F9951EC15EECD33A9E0C85</key>
+		<key>00DAB3CCB2788D9A5DB4B8D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>50A3ED320764309EE489F9C3</key>
+		<key>0F973FC499A566FC2AFC60BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53F883F1807EE5F3C9E5EB03</key>
+		<key>6E64CDBE83F9541B1E099062</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83233DC4A3E06EDA46079121</key>
+		<key>7351EE8AA26C1525A00B4284</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9BE9C8EA07332B593E521E24</key>
+		<key>8D00E22587EED1993584965D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B1A7CF2B1D3113C6C7E280C2</key>
+		<key>988F6CDCDEBFDD6DCED27C76</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B680C15FD4357E6655BD03B8</key>
+		<key>9B728287205ADE02CD4ABF41</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CDB1C114C19E52E4D0FA7C37</key>
+		<key>B190699E30435819719BE9FA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D5F9D6194CFAC6F98EB87118</key>
+		<key>C8FBD2EF7F46882C18E9D8F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D8DCCB3DE834D20515332D50</key>
+		<key>CBB66C495A063A03028D0E5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D95EF8FC3F0679AF215BB5FF</key>
+		<key>CD24EFBCEACCE703DB9EBCBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4842BF68DEFD73AF3DBB9BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE78C02503EDBB935AADA626</key>
 		<dict>
 			<key>primary</key>
 			<true/>

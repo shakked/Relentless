@@ -11,6 +11,7 @@ pod 'ParseFacebookUtils'
 pod 'SDWebImage'
 pod 'FBSDKCoreKit'
 pod 'FBSDKLoginKit'
+pod 'AMSmoothAlert', '~> 1.0'
 end
 
 target 'RelentlessTests' do

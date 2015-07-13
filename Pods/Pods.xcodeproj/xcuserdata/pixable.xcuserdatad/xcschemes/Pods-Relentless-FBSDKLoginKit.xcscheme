@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50A3ED320764309EE489F9C3"
+               BlueprintIdentifier = "EE78C02503EDBB935AADA626"
                BuildableName = "libPods-Relentless-FBSDKLoginKit.a"
                BlueprintName = "Pods-Relentless-FBSDKLoginKit"
                ReferencedContainer = "container:Pods.xcodeproj">

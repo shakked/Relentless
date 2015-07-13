@@ -19,7 +19,6 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "onProfileUpdated:", name:FBSDKProfileDidChangeNotification, object: nil)
-        // Do any additional setup after loading the view.
     }
     
     
@@ -34,10 +33,9 @@ class SignUpViewController: UIViewController {
     @IBAction func signUpButtonPressed(sender: AnyObject) {
         loadingAnimator.startAnimating()
         LoginManager.sharedManager.logInWithFacebook { (succeeded) -> (Void) in
-            if succeeded {
-                
-            } else {
-                println("Could not log in the user through facebook.")
+            if !succeeded {
+                let alert = AMSmoothAlertView(dropAlertWithTitle: "Something went wrong!", andText: "We couldn't log you in.", andCancelButton: false, forAlertType: AlertType.Failure)
+                alert.show()
             }
         }
         
@@ -50,7 +48,8 @@ class SignUpViewController: UIViewController {
                     self.presentViewController(UINavigationController(rootViewController: FeedTableViewController(style: UITableViewStyle.Grouped)), animated: true, completion: nil)
                 })
             } else {
-                println("Could not link Parse to Facebook")
+                let alert = AMSmoothAlertView(dropAlertWithTitle: "Something went wrong!", andText: "We couldn't log you in.", andCancelButton: false, forAlertType: AlertType.Failure)
+                alert.show()
             }
         })
     }

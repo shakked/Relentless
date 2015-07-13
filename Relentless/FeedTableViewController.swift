@@ -31,6 +31,10 @@ class FeedTableViewController: UITableViewController {
     
     //MARK:- Loading Data
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     func loadData() {
         ActivityManager.sharedManager.activityEvent(NSDate(), completion: { (activityEvent) -> (Void) in
             self.activityEvent = activityEvent

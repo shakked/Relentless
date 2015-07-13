@@ -90,7 +90,7 @@ class FeedTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 72
+        return 76
     }
     
     //MARK:- Navigation

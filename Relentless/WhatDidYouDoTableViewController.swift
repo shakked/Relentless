@@ -39,7 +39,6 @@ class WhatDidYouDoTableViewController: UITableViewController {
         ActivityManager.sharedManager.activityTypesThatConsumeEnergy { (activityTypes, succeeded) -> Void in
             self.activityTypes = activityTypes
         }
-        
     }
     
     func configureTableView() {
@@ -102,17 +101,16 @@ class WhatDidYouDoTableViewController: UITableViewController {
     
     func cancel() {
         self.dismissViewControllerAnimated(true, completion: nil)
-
     }
     
     func done() {
-        ActivityType.createActivities(activityTypesToCreate, completion: { (succeeded, activities) -> Void in
-            if succeeded {
-                self.activityEvent.addActivities(activities)
-            } else {
-                println("failed to add activites")
-            }
-            self.dismissViewControllerAnimated(true, completion: nil)
-        })
+//        ActivityType.createActivities(activityTypesToCreate, completion: { (succeeded, activities) -> Void in
+//            if succeeded {
+//                self.activityEvent.addActivities(activities)
+//            } else {
+//                println("failed to add activites")
+//            }
+//            self.dismissViewControllerAnimated(true, completion: nil)
+//        })
     }
 }

@@ -35,9 +35,7 @@ class SignUpViewController: UIViewController {
         loadingAnimator.startAnimating()
         LoginManager.sharedManager.logInWithFacebook { (succeeded) -> (Void) in
             if succeeded {
-                println("Succeeded.")
-                println(FBSDKProfile.currentProfile())
-    
+                
             } else {
                 println("Could not log in the user through facebook.")
             }
@@ -49,14 +47,11 @@ class SignUpViewController: UIViewController {
         LoginManager.sharedManager.loginAndLinkFBAccessTokenWithParse({ (succeeded) -> (Void) in
             if succeeded {
                 LoginManager.sharedManager.configureUser({ (succeeded) -> (Void) in
-                    println("Succeeded:\(succeeded)")
+                    self.presentViewController(UINavigationController(rootViewController: FeedTableViewController(style: UITableViewStyle.Grouped)), animated: true, completion: nil)
                 })
-                
             } else {
                 println("Could not link Parse to Facebook")
             }
         })
     }
-    
-    
 }

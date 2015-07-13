@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="ActivityTypeCell" customModule="Relentless" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ByA-91-Wxc">
+                        <rect key="frame" x="8" y="4" width="382" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weights" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFz-dh-oiX">
+                                <rect key="frame" x="66" y="8" width="275" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yba-Rc-PKV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bench Press With Dumbbells-100.png" translatesAutoresizingMaskIntoConstraints="NO" id="rjK-Yg-sUV">
+                                <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0vC-70-5HT"/>
+                                    <constraint firstAttribute="height" constant="50" id="vob-Hi-p1a"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You did exercises involving weights." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzW-bi-swY">
+                                <rect key="frame" x="66" y="38" width="308" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="vgM-Zc-f5a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckmarkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wmA-ab-V0y">
+                                <rect key="frame" x="349" y="8" width="25" height="25"/>
+                                <color key="tintColor" red="0.0" green="0.79012566900000003" blue="0.58163275120000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="1er-Kp-R4C"/>
+                                    <constraint firstAttribute="width" constant="25" id="xRV-Ig-lDQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZFz-dh-oiX" firstAttribute="top" secondItem="ByA-91-Wxc" secondAttribute="top" constant="8" id="1Yw-hU-niS"/>
+                            <constraint firstAttribute="height" constant="66" id="C8F-wX-9u9"/>
+                            <constraint firstItem="wmA-ab-V0y" firstAttribute="top" secondItem="ByA-91-Wxc" secondAttribute="top" constant="8" id="ECw-fS-jNU"/>
+                            <constraint firstItem="ZFz-dh-oiX" firstAttribute="leading" secondItem="rjK-Yg-sUV" secondAttribute="trailing" constant="8" id="Fub-x1-CtE"/>
+                            <constraint firstItem="KzW-bi-swY" firstAttribute="leading" secondItem="rjK-Yg-sUV" secondAttribute="trailing" constant="8" id="QdB-1L-JUO"/>
+                            <constraint firstAttribute="trailing" secondItem="wmA-ab-V0y" secondAttribute="trailing" constant="8" id="SoR-ha-lD4"/>
+                            <constraint firstItem="rjK-Yg-sUV" firstAttribute="leading" secondItem="ByA-91-Wxc" secondAttribute="leading" constant="8" id="bN0-wQ-vp6"/>
+                            <constraint firstAttribute="trailing" secondItem="KzW-bi-swY" secondAttribute="trailing" constant="8" id="gLY-QJ-0hg"/>
+                            <constraint firstAttribute="centerY" secondItem="rjK-Yg-sUV" secondAttribute="centerY" id="hm9-0g-DLp"/>
+                            <constraint firstItem="wmA-ab-V0y" firstAttribute="leading" secondItem="ZFz-dh-oiX" secondAttribute="trailing" constant="8" id="k8F-Rs-6D8"/>
+                            <constraint firstAttribute="bottom" secondItem="KzW-bi-swY" secondAttribute="bottom" constant="8" id="tFV-1g-ZnQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                <color key="value" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ByA-91-Wxc" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="31J-aa-xHT"/>
+                    <constraint firstItem="ByA-91-Wxc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="bvX-X4-PWZ"/>
+                    <constraint firstItem="ByA-91-Wxc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="uVA-mg-uLK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkmarkImageView" destination="wmA-ab-V0y" id="TNP-17-Gbd"/>
+                <outlet property="descriptionLabel" destination="KzW-bi-swY" id="vZa-8H-miD"/>
+                <outlet property="iconImageView" destination="rjK-Yg-sUV" id="e7k-Yv-zoF"/>
+                <outlet property="nameLabel" destination="ZFz-dh-oiX" id="2G4-5f-W3r"/>
+            </connections>
+            <point key="canvasLocation" x="433" y="406.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Bench Press With Dumbbells-100.png" width="100" height="100"/>
+        <image name="CheckmarkIcon" width="33" height="33"/>
+    </resources>
+</document>

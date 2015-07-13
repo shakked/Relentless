@@ -35,4 +35,10 @@ extension UIBarButtonItem {
         doneBarButton.tintColor = tintColor
         return doneBarButton
     }
+    
+    class func addBarButton(target: UIViewController, tintColor: UIColor, selector: Selector) -> UIBarButtonItem {
+        let addBarButton = UIBarButtonItem(barButtonSystemItem: .Add, target: target, action: selector)
+        addBarButton.tintColor = tintColor
+        return addBarButton
+    }
 }

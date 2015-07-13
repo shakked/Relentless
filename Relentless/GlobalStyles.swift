@@ -20,4 +20,8 @@ class GlobalStyles: NSObject {
     class func blueColor() -> UIColor {
         return UIColor(rgba: "#0080FF")
     }
+    
+    class func lightGrayColor() -> UIColor {
+        return UIColor(rgba: "#DFDFDF")
+    }
 }

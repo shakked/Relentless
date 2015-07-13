@@ -17,6 +17,7 @@ class ActivityEvent: NSObject {
     init(object: PFObject) {
         date = object.valueForKey(Constants.Parameters.date) as! NSDate
         let objects = object.valueForKey(Constants.Parameters.activities) as? [PFObject] ?? []
+        
         activities = Activity.parse(objects)
         self.object = object
         super.init()
